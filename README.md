@@ -100,4 +100,8 @@ se comprobará que se encuentre en dicho rango.<br>
 
 
 Tutorial en Youtube de como importarla, vincularle el JavaDoc y trabajar con
-ella: https://www.youtube.com/watch?v=hN1BojF_lsY.
+ella: https://www.youtube.com/watch?v=hN1BojF_lsY.<br>
+<h1>Enlaces en Google Drive:</h1>
+Versión Estándar: https://drive.google.com/file/d/1pdIIa2mM6tmm5tBJrDWqKLED6U8-FDZk/view?usp=share_link<br>
+Versión Lite: https://drive.google.com/file/d/1nV-5ZMrxnZ7fn_C8T4bCJ2MwFfYIB1P-/view?usp=share_link<br>
+
