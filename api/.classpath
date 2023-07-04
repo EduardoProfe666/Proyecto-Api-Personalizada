@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="src/lafs/flatlaf-2.5.jar"/>
+	<classpathentry kind="lib" path="src/lafs/flatlaf-intellij-themes-2.5.jar"/>
+	<classpathentry kind="lib" path="src/lafs/JTattoo-1.6.13 (1).jar"/>
+	<classpathentry kind="lib" path="src/lafs/LiquidLnF.jar"/>
+	<classpathentry kind="lib" path="src/lafs/Looks-2.0-rc.jar"/>
+	<classpathentry kind="lib" path="src/lafs/NimrodLF.jar"/>
+	<classpathentry kind="lib" path="src/lafs/TinyLaF.jar"/>
+	<classpathentry kind="lib" path="src/lafs/TonicLF.jar"/>
+	<classpathentry kind="lib" path="lib/RSNotify v1.0.jar"/>
+	<classpathentry kind="lib" path="lib/TimingFramework-0.55.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
