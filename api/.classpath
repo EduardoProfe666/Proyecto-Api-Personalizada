@@ -12,5 +12,6 @@
 	<classpathentry kind="lib" path="src/lafs/TonicLF.jar"/>
 	<classpathentry kind="lib" path="lib/RSNotify v1.0.jar"/>
 	<classpathentry kind="lib" path="lib/TimingFramework-0.55.jar"/>
+	<classpathentry kind="src" path="/apiLite"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
