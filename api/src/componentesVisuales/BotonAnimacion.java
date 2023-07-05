@@ -25,7 +25,7 @@ import org.jdesktop.animation.timing.TimingTargetAdapter;
  * <h1>Ver:</h1>{@link #colorEfecto}<br><br>
  * @version 28/10/2022
  * @author DJ-Raven
- * @author Eduardo
+ * @author EduardoProfe
  */
 
 public class BotonAnimacion extends JButton {

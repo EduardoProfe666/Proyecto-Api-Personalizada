@@ -6,7 +6,13 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
-
+/**
+ *	Prueba de eficiencia en consola de los algoritmos de ordenamiento implementados en {@link Ordenamiento}. 
+ * 
+ * @version 04/07/2023
+ * @author EduardoProfe
+ *
+ */
 public final class PruebaAlgoritmoOrdenamiento {
 	private PruebaAlgoritmoOrdenamiento() {}
 	private static List<Integer> listaN = randomN();

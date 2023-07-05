@@ -67,7 +67,7 @@ import componentesVisuales.PanelGradienteV;
  * 
  * Prueba visual de la api
  * 
- * @version 17/12/2022 alpha
+ * @version 04/07/2023
  * @author EduardoProfe
  *
  */
@@ -1004,11 +1004,11 @@ public class PruebaVisual extends JFrame {
 		linea.setBounds(16, 15, 702, 248);
 		lineas.add(linea);
 
-		JLabel label_5 = new JLabel("Prueba de Componente Visual: Imagen");
-		label_5.setHorizontalAlignment(SwingConstants.CENTER);
-		label_5.setFont(new Font("Tahoma", Font.PLAIN, 19));
-		label_5.setBounds(164, 0, 404, 23);
-		lineas.add(label_5);
+		JLabel lblPruebaDeComponente_8 = new JLabel("Prueba de Componente Visual: Linea");
+		lblPruebaDeComponente_8.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPruebaDeComponente_8.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		lblPruebaDeComponente_8.setBounds(164, 0, 404, 23);
+		lineas.add(lblPruebaDeComponente_8);
 
 		JLabel lblOrientaci = new JLabel("Orientaci\u00F3n:");
 		lblOrientaci.setVerticalAlignment(SwingConstants.TOP);
