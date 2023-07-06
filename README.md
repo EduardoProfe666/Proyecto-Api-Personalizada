@@ -133,7 +133,7 @@ que estas pruebas son superficiales y no determinan la eficiencia de los algorit
   </b>
 </ul>
 
-<br><h1>Enlaces en Youtube</h1>
+<h1>Enlaces en Youtube</h1>
 <ul>
   <li><b>¿Cómo importar la api, vincularle el JavaDoc y trabajar con ella</b>?: https://www.youtube.com/watch?v=hN1BojF_lsY.
 </ul>
