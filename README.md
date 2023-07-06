@@ -141,7 +141,7 @@ que estas pruebas son superficiales y no determinan la eficiencia de los algorit
 
 <h1>Enlaces en Google Drive:</h1>
 <ul>
-  <li><b>Versión Estándar</b>: https://drive.google.com/file/d/1pdIIa2mM6tmm5tBJrDWqKLED6U8-FDZk/view?usp=share_link
-  <li><b>Versión Lite</b>: https://drive.google.com/file/d/1nV-5ZMrxnZ7fn_C8T4bCJ2MwFfYIB1P-/view?usp=share_link
+  <li><b>Versión Estándar</b>: https://drive.google.com/file/d/194eeuu4QhYpQj8gkoJ0_NuF5BbtkVAVs/view?usp=sharing
+  <li><b>Versión Lite</b>: https://drive.google.com/file/d/1X2FFDOlaKBD1-La_shhLjDKlPHXlY9lr/view?usp=sharing
 </ul>
 
