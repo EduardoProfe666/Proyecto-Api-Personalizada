@@ -1,23 +1,22 @@
 # Proyecto-Api-Personalizada
-Api personalizada con componentes visuales personalizados y utilidades.
-
-Existen dos versiones, una con todas las funcionalidades, y una versión lite
+<p>Api personalizada con componentes visuales personalizados y utilidades.</p>
+<p>Existen dos versiones, una con todas las funcionalidades, y una versión lite
 sin el ManejadorLookAndFeels. Si se usa la Lite, tener en cuenta que 
 algunos componentes visuales se ven mejor con un Look and Feel diferente
-al predeterminado.
+al predeterminado.</p>
+<p>La api, tanto en su versión estándar, como en su versión Lite, están documentadas,
+y se generaron sus respectivas documentaciones JavaDoc, que se encuentran en las carpetas
+DocApi. Pueden ser vinculadas al proyecto como muestra el tutorial con enlace al final de este documento.</p>
 
-La api, tanto en su versión estándar, como en su versión Lite, están documentadas,
-y se generaron su respectiva documentación JavaDoc, que se encuentran en las carpetas
-DocApi. Pueden ser vinculadas al proyecto como muestra el tutorial con enlace al final de este documento.
+<p>La api.jar, en ambas versiones, puede ser ejecutadas para poder tener acceso a una prueba visual preliminar
+de la mayoría de sus componentes visuales. En futuras versiones se continuará mejorando.</p>
 
-La api.jar, en ambas versiones, puede ser ejecutadas para poder tener acceso a una prueba visual preliminar
-de la mayoría de sus componentes visuales. En futuras versiones se continuará mejorando.
-
-<b>Versión Actual</b>: 04/07/2023
+<b>Versión Actual</b>: 2023/07/04
+<br><b>Enlace de descarga</b>: https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/releases/latest
 <h1>Cambios de la última actualización:</h1>
 <ul>
-  <li>Nuevos componentes visuales: JLabelAnimacion, JLabelHora y Notificaciones.</li>
-  <li>Soporte de nuevos LookAndFeels: JTattoo, Liquid, Nimrod, Tiny, Tonic y JGoodies.</li>
+  <li><b>Nuevos componentes visuales</b>: Linea.</li>
+  <li><b>Nuevos algoritmos con pruebas en consola</b>: Ordenamiento y Búsqueda.</li>
 </ul>
 
 <h1>Componentes Actuales:</h1>
@@ -29,7 +28,8 @@ de la mayoría de sus componentes visuales. En futuras versiones se continuará 
   <li><b>Imagen</b>: Permitirá la generación de una imagen que se reajuste automáticamente a las dimensiones dadas.
   <li><b>JLabelAnimacion</b>: Permitirá la modelación de un JLabel con texto animado.
   <li><b>JLabelHora</b>: Permitirá la modelación de un reloj, con distintos formatos de hora.
-  <li><b>JTextModificado</b>: Permitirá el empleo de un JTextField modificado, con un límite, validado o no con letras o dígitos, y con o sin efecto de sonido.</li>
+  <li><b>JTextFieldModificado</b>: Permitirá el empleo de un JTextField modificado, con un límite, validado o no con letras o dígitos, y con o sin efecto de sonido.</li>
+  <li><b>Linea</b>: Permitirá generar una línea, pudiendo ser personalizada con el grosor, color, orientación y el tipo de línea.</li>
   <li><b>Notificaciones</b>: Permitirá el empleo de un sistema de notificaciones, con posiciones variables y diferentes tipos de notificaciones.</li>
   <li><b>PanelAnimacionCurvas</b>: Permitirá la modelación de un panel con animación. Puede ser empleado en pantallas de carga.
   <li><b>PanelBordeOval</b>: Permitirá la modelación de un panel con bordes ovales variables, sin necesidad de ser equitativos.
@@ -57,9 +57,8 @@ de la mayoría de sus componentes visuales. En futuras versiones se continuará 
 </ul>
 
 <h3>ManejadorLookAndFeels</h3>
-Permitirá el manejo de los look and feels referenciados, de una manera sencilla permitiendo<br>
-realizarlo incluso en tiempo de ejecución. <br>
-Los Look And Feels actualmente soportados son:<br>
+<p>Permitirá el manejo de los look and feels referenciados, de una manera sencilla permitiendo<br>
+realizarlo incluso en tiempo de ejecución. Los Look And Feels actualmente soportados son:</p>
 <ul>
   <li><b>Metal (Predeterminado)
   <li>Nimbus
@@ -93,11 +92,50 @@ Los Look And Feels actualmente soportados son:<br>
   <li><b>validarFechaNacimientoCi(String, Date, Date)</b>: Permite validar la fecha de nacimiento del carnet de identidad. Si se pasa un rango de fechas, se comprobará que se encuentre en dicho rango.</li>
   <li><b>validarCI(String, Date, Date)</b>: Permite validar el carnet de identidad.</li>
   <li><b>validarRangoFecha(Date, Date, Date)</b>: Permite validar que una fecha se encuentre en un rango de fechas dado</li>
-</ul><br>
+</ul>
 
-<h1>Enlaces en Youtube</h1>
+<h2>Algoritmos:</h2>
+<h3>Ordenamiento:</h3>
+<p>Presenta un <b>PruebaAlgoritmoOrdenamiento</b> que contiene pruebas en consola de tiempo de ejecución a los algoritmos de Ordenamiento. Tener en cuenta 
+que estas pruebas son superficiales y no determinan la eficiencia de los algoritmos.<br>Los algoritmos de ordenamiento actualmente implementados son:</p>
 <ul>
-  <li><b>Cómo importar la api, vincularle el JavaDoc y trabajar con ella</b>: https://www.youtube.com/watch?v=hN1BojF_lsY.
+  <b>
+    <li>Ordenamiento de Burbuja (Bubble Sort)</li>
+    <li>Ordenamiento por Inserción (Insertion Sort)</li>
+    <li>Ordenamiento de Cubos (Bucket Sort)</li>
+    <li>Ordenamiento por Selección (Selection Sort)</li>
+    <li>Ordenamiento de Fusión (Merge Sort)</li>
+    <li>Ordenamiento Rápido (Quick Sort)</li>
+    <li>Ordenamiento de Montículo (Heap Sort)</li>
+    <li>Ordenamiento de base (Radix Sort)</li>
+    <li>Ordenamiento de Shell-Metzner (Shell Sort)</li>
+    <li>Ordenamiento de Coctél (Cocktail Sort)</li>
+    <li>Ordenamiento de Peine Mejorado (Comb Sort)</li>
+    <li>Ordenamiento de Gnome (Gnome Sort)</li>
+    <li>Tim Sort Nativo en Collections</li>
+    <li>Ordenamiento de Pares e Impares (Odd Even Sort)</li>
+    <li>Ordenamiento por Mezcla Natural (Tim Sort)</li>
+  </b>
+</ul>
+
+<h3>Busqueda:</h3>
+<p>Presenta un <b>PruebaAlgoritmoBusqueda</b> que contiene pruebas en consola de tiempo de ejecución a los algoritmos de Busqueda. Tener en cuenta 
+que estas pruebas son superficiales y no determinan la eficiencia de los algoritmos.<br>Los algoritmos de búsqueda actualmente implementados son:</p>
+<ul>
+  <b>
+    <li>Búsqueda Lineal (Lineal Search)</li>
+    <li>Búsqueda Binaria Nativa en Collections</li>
+    <li>Búsqueda Binaria Recursiva (Recursive Binary Search)</li>
+    <li>Búsqueda Binaria No Recursiva (Not Recursive Binary Search)</li>
+    <li>Búsqueda Exponencial (Exponential Search)</li>
+    <li>Búsqueda Fibonacci (Fibonacci Search)</li>
+    <li>Búsqueda Ternaria (Ternary Search)</li>
+  </b>
+</ul>
+
+<br><h1>Enlaces en Youtube</h1>
+<ul>
+  <li><b>¿Cómo importar la api, vincularle el JavaDoc y trabajar con ella</b>?: https://www.youtube.com/watch?v=hN1BojF_lsY.
 </ul>
 
 
