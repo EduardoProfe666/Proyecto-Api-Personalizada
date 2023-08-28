@@ -49,32 +49,173 @@ de la mayoría de sus componentes visuales. En futuras versiones se continuará 
   - [Google Drive](#google-drive)
 
 # Importación de la api:
+Para poder importar la api puede ver el [siguiente video](https://www.youtube.com/watch?v=hN1BojF_lsY) en youtube donde se explica paso a paso este proceso.
+<br>Los pasos resumidos son:
+- Copiar la api.jar/apiLite.jar al proyecto.
+- Añadir el fichero copiado al Build Path del proyecto.
+- Usar la api 👾.
+
+![Proceso de Importacion](assets/gif/importacion.gif)
 
 # Prueba Visual de la api:
+<p>La api contiene una prueba visual que permite comprobar los componentes visuales que se incluyen. Para poder acceder a ella 
+simplemente haga doble clic en el archivo .jar de la api (tanto en la versión estándar como en la versión lite).</p>
+
+![Api Visual](assets/gif/api%20visual.gif)
 
 # Componentes Actuales: 
 ## Componentes Visuales:
   - <b>`AvatarCircular`</b>: Permitirá la representación de un avatar circular con tamaño y color de borde variable, dada una imagen.
+  > Constructores:
+  > ```java
+  > AvatarCircular avatar = new AvatarCircular(new ImageIcon(ClaseBase.class.getResource("/img/avatar.png")),2);
+  > ```
+  ![AvatarCircular](assets/gif/avatar%20circular.gif)
+ 
+  <br>
+
   - <b>`BotonAnimacion`</b>: Permitirá el modelado de un botón con animación al ser presionado.
+  > Constructores:
+  > ```java
+  > BotonAnimacion btn = new BotonAnimacion();
+  > ```
+  ![BotonAnimacion](assets/gif/boton%20animacion.gif)
+  
+  <br>
+
   - <b>`CampoCIValidado`</b>: Permitirá el empleo de un JFormattedTextField modificado para la validación en tiempo real del carnet de identidad. Una vez válido, extrae información del mismo, dígase edad, fecha de nacimiento y sexo.</li>
+  > Constructores:
+  > ```java
+  > CampoCIValidado campo = new CampoCIValidado();
+  > CampoCIValidado campo2 = new CampoCIValidado(new Date(),new Date());
+  > ```
+  ![CampoCIValidado](assets/gif/ci.gif)    
+  
+  <br>
+
   - <b>`Imagen`</b>: Permitirá la generación de una imagen que se reajuste automáticamente a las dimensiones dadas.
+  > Constructores:
+  > ```java
+  > Imagen img = new Imagen(new ImageIcon(ClaseBase.class.getResource("/img/img.png")));
+  > ```
+  ![Imagen](assets/gif/imagen.gif)  
+
+  <br>
+
   - <b>`ImagenAnimada`</b>: Permitirá modelar una imagen con una animación de movimiento sinusoide en dirección vertical u horizontal.
   > [!IMPORTANT]
   > El componente `ImagenAnimada` se encuentra en fase Beta, por tanto, no se encuentra completamente terminado ni optimizado ni probado.
   > Solo se garantiza su correcto funcionamiento en contenedores con Absolute Layout.
+  
+  > Constructores:
+  > ```java
+  > ImagenAnimada img = new ImagenAnimada(ClaseBase.class.getResource("/img/img.png"),50,50,14,100,Direccion.Vertical);
+  > ```
+  ![Imagen Animada](assets/gif/imagen%20animada.gif)    
+
+  <br>
+
   - <b>`JLabelAnimacion`</b>: Permitirá la modelación de un JLabel con texto animado.
+  > Constructores:
+  > ```java
+  > JLabelAnimacion lbl = new JLabelAnimacion("HOLA", -1, -1, -1);
+  > ```
+  ![JLabelAnimacion](assets/gif/label%20animacion.gif)    
+
+  <br>
+  
   - <b>`JLabelHora`</b>: Permitirá la modelación de un reloj digital, con distintos formatos de hora.
+  > Constructores:
+  > ```java
+  > JLabelHora reloj = new JLabelHora(JLabelHora.FORMATO_PREDETERMINADO);
+  > ```
+  ![JLabelHora](assets/gif/reloj.gif)  
+
+  <br>
+
   - <b>`JLabelMultilineaMultialineado`</b>: Permitirá la modelación de un JLabel con capacidad de mostrar texto extenso en múltiples líneas y alinearlo de diversas formas, pudiendo estar justificado.
+  > Constructores:
+  > ```java
+  > JLabelMultilineaMultialineado lbl = new JLabelMultilineaMultialineado("JIIII", Alineacion.JUSTIFICADA);
+  > ```
+  ![JlABE](assets/gif/multilinea.gif)    
+
+  <br>
+
   - <b>`JTextFieldModificado`</b>: Permitirá el empleo de un JTextField modificado, con un límite, validado o no con letras o dígitos, y con o sin efecto de sonido.
+  > Constructores:
+  > ```java
+  > JTextFieldModificado text = new JTextFieldModificado();
+  > ```
+  ![texto](assets/gif/jtextfield%20modificado.gif)  
+
+  <br>
+
   - <b>`Linea`</b>: Permitirá generar una línea, pudiendo ser personalizada con el grosor, color, orientación y el tipo de línea.</li>
+  > Constructores:
+  > ```java
+  > Linea lin = new Linea(Linea.ORIENTACION_VERTICAL, Linea.LINEA_DISCONTINUA);
+  > ```
+  ![LInea](assets/gif/linea.gif)    
+
+  <br>
+
   - <b>`Notificaciones`</b>: Permitirá el empleo de un sistema de notificaciones, con posiciones variables y diferentes tipos de notificaciones.</li>
+  > Constructores:
+  > ```java
+  > Notificaciones ntf = new Notificaciones("HOLA","JELOU",2,Notificaciones.POSICION_INF_DER, Notificaciones.MENSAJE_EXITO);
+  > ```
+  ![Not](assets/gif/notificacion.gif)  
+  
+  <br>  
+
   - <b>`PanelAnimacionCurvas`</b>: Permitirá la modelación de un panel con animación. Puede ser empleado en pantallas de carga.
+  > Constructores:
+  > ```java
+  > PanelAnimacionCurvas pan = new PanelAnimacionCurvas((Color) null, (Color) null, (Color) null, (Color) null);
+  > ```
+  ![PanelAnimacionCurvas](assets/gif/panel%20animacion.gif)    
+
+  <br>
+
   - <b>`PanelBordeOval`</b>: Permitirá la modelación de un panel con bordes ovales variables, sin necesidad de ser equitativos.
+  > Constructores:
+  > ```java
+  > PanelBordeOval pan = new PanelBordeOval(20);
+  > PanelBordeOval pan = new PanelBordeOval(20,15,10,30)
+  > ```
+  ![PanelBorde](assets/gif/curva.gif)    
+
+  <br>
+
   - <b>`PanelGradiente`</b>: Permitirá la modelación de un panel gradiente. Es el empleado en PanelAnimacionCurvas.
+  > Constructores:
+  > ```java
+  > PanelGradiente pan = new PanelGradiente(Color.YELLOW,Color.GREEN);
+  > ```
+  ![Panel](assets/gif/panel%20gradiente.gif)    
+
+  <br>
+
   - <b>`PanelGradienteH`</b>: Permitirá la modelación de un panel gradiente con sentido horizontal.
+  > Constructores:
+  > ```java
+  > PanelGradienteH pan = new PanelGradienteH(Color.YELLOW,Color.GREEN);
+  > ```
+  ![Panel](assets/gif/panel%20gradiente.gif)
+  
+  <br>
+
   - <b></b>`PanelGradienteV`</b>: Permitirá la modelación de un panel gradiente con sentido vertical.
+  > Constructores:
+  > ```java
+  > PanelGradienteV pan = new PanelGradienteV(Color.YELLOW,Color.GREEN);
+  > ```
+  ![Panel](assets/gif/panel%20gradiente.gif)  
 
 ## Utilidades:
+<p>Todos los métodos de las utilidades se emplean de manera estática</p>
+
 ### Auxiliares:
   - <b>`convertirFechaNacimientoCiDate`(String)</b>: Permite extraer la fecha de nacimiento del carnet de identidad.
   - <b>`determinarEdad`(Date)</b>: Permite determinar la edad actual de la persona que haya nacido en la fecha dada.
@@ -149,6 +290,9 @@ de la mayoría de sus componentes visuales. En futuras versiones se continuará 
 - [Listado de apellidos](assets/nombres/apellidos.txt).
 
 ### ManejadorLookAndFeels:
+
+![ORd](assets/gif/look%20and%20feel.gif)
+
 <p>Permitirá el manejo de los look and feels referenciados, de una manera sencilla permitiendo<br>
 realizarlo incluso en tiempo de ejecución. Los Look And Feels actualmente soportados son:</p>
 <ul>
@@ -185,7 +329,12 @@ realizarlo incluso en tiempo de ejecución. Los Look And Feels actualmente sopor
 *   <b>`~~validarRangoFecha(Date, Date, Date)~~`</b>: Permite validar que una fecha se encuentre en un rango de fechas dado
 
 ## Algoritmos:
+<p>Todos los algoritmos se emplean de manera estática</p>
+
 ### Ordenamiento:
+
+![ORd](assets/gif/ordenamiento.gif)
+
 <p>Presenta un <b>PruebaAlgoritmoOrdenamiento</b> que contiene pruebas en consola de tiempo de ejecución a los algoritmos de Ordenamiento. Tener en cuenta 
 que estas pruebas son superficiales y no determinan la eficiencia de los algoritmos.<br>Los algoritmos de ordenamiento actualmente implementados son:</p>
 <ul>
@@ -209,6 +358,9 @@ que estas pruebas son superficiales y no determinan la eficiencia de los algorit
 </ul>
 
 ### Búsqueda: 
+
+![ORd](assets/gif/busqueda.gif)
+
 <p>Presenta un <b>PruebaAlgoritmoBusqueda</b> que contiene pruebas en consola de tiempo de ejecución a los algoritmos de Busqueda. Tener en cuenta 
 que estas pruebas son superficiales y no determinan la eficiencia de los algoritmos.<br>Los algoritmos de búsqueda actualmente implementados son:</p>
 <ul>
@@ -232,5 +384,3 @@ que estas pruebas son superficiales y no determinan la eficiencia de los algorit
 ## Google Drive:
 - **[Versión Estándar](https://drive.google.com/file/d/194eeuu4QhYpQj8gkoJ0_NuF5BbtkVAVs/view?usp=sharing)**
 - **[Versión Lite](https://drive.google.com/file/d/1X2FFDOlaKBD1-La_shhLjDKlPHXlY9lr/view?usp=sharing)**
-
-
