@@ -3,6 +3,8 @@
 
 <p>Api personalizada con componentes visuales personalizados y utilidades.</p>
 
+<p>Para el correcto funcionamiento de la api es necesario al menos <b>Java 1.8</b>. Todos los componentes visuales de la api fueron creados y, por tanto, son compatibles con <b>Java Swing</b>.</p>
+
 <p>Existen dos versiones, una con todas las funcionalidades, y una versión lite
 sin el ManejadorLookAndFeels. Si se usa la Lite, tener en cuenta que 
 algunos componentes visuales se ven mejor con un Look and Feel diferente
@@ -12,36 +14,43 @@ al predeterminado.</p>
 y se generaron sus respectivas documentaciones JavaDoc, que se encuentran en las carpetas
 DocApi. Pueden ser vinculadas al proyecto como muestra el tutorial con enlace al final de este documento.</p>
 
-<p>La api.jar, en ambas versiones, puede ser ejecutadas para poder tener acceso a una prueba visual preliminar
+<p>La api.jar, en ambas versiones, puede ser ejecutada para poder tener acceso a una prueba visual preliminar
 de la mayoría de sus componentes visuales. En futuras versiones se continuará mejorando.</p>
 
-**Versión Actual**: `2023/07/04`
+**Versión Actual**: `2023/08/28`
 - **Enlace de descarga en Github**: [descargar última versión.](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/releases/latest)
 - **Enlace de descarga en Google Drive**: [descargar última versión.](#google-drive)
-
 > [!WARNING]
-> Existen secciones utilidades de la api que no fueron probadas totalmente, por lo que pueden existir bugs.
+> Existen secciones de utilidades de la api que no fueron probadas correctamente, por lo que pueden existir bugs.
 
 # Cambios de la última actualización:
-  - **Nuevos componentes visuales**: `Linea`.
-  - **Nuevos algoritmos con pruebas en consola**: `Ordenamiento` y `Búsqueda`.
+  - **Nuevos componentes visuales**: `JLabelMultilineaMultialineado` e `ImagenAnimada`(Beta).
+  - **Nuevas utilidades**: `GeneradorNombres`, `GeneradorContraseñas` y `GeneradorCICubano`.
+  - **Corrección de errores menores**.
 
 # Índice de Contenido:
+- [Importación de la api](#importación-de-la-api)
+- [Prueba Visual de la api](#prueba-visual-de-la-api)
 - [Componentes Actuales](#componentes-actuales)
   - [Componentes Visuales](#componentes-visuales)
   - [Utilidades](#utilidades)
     - [Auxiliares](#auxiliares)
     - [Auxiliares Visuales](#auxiliares-visuales)
+    - [GeneradorCICubano](#generadorcicubano)
+    - [GeneradorContraseñas](#generadorcontraseñas)
+    - [GeneradorNombres](#generadornombres)
     - [ManejadorLookAndFeels](#manejadorlookandfeels) 
     - [Validaciones](#validaciones)
   - [Algoritmos](#algoritmos)
     - [Ordenamiento](#ordenamiento)
-    - [Búsqueda](#búsqueda)
+    - [Búsqueda](#búsqueda) 
 - [Enlaces](#enlaces) 
   - [Youtube](#youtube)
   - [Google Drive](#google-drive)
 
+# Importación de la api:
 
+# Prueba Visual de la api:
 
 # Componentes Actuales: 
 ## Componentes Visuales:
@@ -49,8 +58,13 @@ de la mayoría de sus componentes visuales. En futuras versiones se continuará 
   - <b>`BotonAnimacion`</b>: Permitirá el modelado de un botón con animación al ser presionado.
   - <b>`CampoCIValidado`</b>: Permitirá el empleo de un JFormattedTextField modificado para la validación en tiempo real del carnet de identidad. Una vez válido, extrae información del mismo, dígase edad, fecha de nacimiento y sexo.</li>
   - <b>`Imagen`</b>: Permitirá la generación de una imagen que se reajuste automáticamente a las dimensiones dadas.
+  - <b>`ImagenAnimada`</b>: Permitirá modelar una imagen con una animación de movimiento sinusoide en dirección vertical u horizontal.
+  > [!IMPORTANT]
+  > El componente `ImagenAnimada` se encuentra en fase Beta, por tanto, no se encuentra completamente terminado ni optimizado ni probado.
+  > Solo se garantiza su correcto funcionamiento en contenedores con Absolute Layout.
   - <b>`JLabelAnimacion`</b>: Permitirá la modelación de un JLabel con texto animado.
-  - <b>`JLabelHora`</b>: Permitirá la modelación de un reloj, con distintos formatos de hora.
+  - <b>`JLabelHora`</b>: Permitirá la modelación de un reloj digital, con distintos formatos de hora.
+  - <b>`JLabelMultilineaMultialineado`</b>: Permitirá la modelación de un JLabel con capacidad de mostrar texto extenso en múltiples líneas y alinearlo de diversas formas, pudiendo estar justificado.
   - <b>`JTextFieldModificado`</b>: Permitirá el empleo de un JTextField modificado, con un límite, validado o no con letras o dígitos, y con o sin efecto de sonido.
   - <b>`Linea`</b>: Permitirá generar una línea, pudiendo ser personalizada con el grosor, color, orientación y el tipo de línea.</li>
   - <b>`Notificaciones`</b>: Permitirá el empleo de un sistema de notificaciones, con posiciones variables y diferentes tipos de notificaciones.</li>
@@ -72,9 +86,67 @@ de la mayoría de sus componentes visuales. En futuras versiones se continuará 
   - <b>`introducirElementoListadoOrdenado`(List, Comparable...)</b>: Permite introducir una serie de elementos en un listado de forma ordenada. Dichos elementos deben ser comparables entre sí de forma natural (Comparable)
 
 ### Auxiliares Visuales:
-<ul>
-  <li><b>`ajustarImagen`(Dimension, URL)</b>: Permite redimensionar la imagen a unas dimensiones dadas. Su mejor empleo es en el redimensionamiento de las   imagenes para iconos, ya sea en JButtons, como en JLabels y demás.</li>
-</ul>
+  - <b>`ajustarImagen(Dimension, URL)`</b>: Permite redimensionar la imagen a unas dimensiones dadas. Su mejor empleo es en el redimensionamiento de las imágenes para iconos, ya sea en JButtons, como en JLabels y demás.
+
+### GeneradorCICubano:
+<p>Permitirá la generación de ci cubanos válidos, únicos y de forma aleatoria. Los métodos implementados son:</p>
+
+- **`generarCICubano(Sexo, int)`**: Permite crear un ci cubano válido de forma aleatoria con un determinado sexo y edad. 
+- **`generarCICubano(Sexo, int, int)`**: Permite crear un ci cubano válido de forma aleatoria con un determinado sexo y una edad aleatoria dentro del rango de edadMin y edadMax.
+- **`generarListadoCICubano(int, Sexo, int, int)`**: Permite crear un listado con una cantidad determinada ci cubanos únicos, válidos y de forma aleatoria con un determinado sexo y una edad aleatoria dentro del rango de edadMin y edadMax.
+- **`generarInformeListadoCiCubano(int, Sexo, int, int)`**: Permite crear un fichero txt que contiene un listado con una cantidad determinada ci cubanos únicos, válidos y de forma aleatoria con un determinado sexo y una edad aleatoria dentro del rango de edadMin y edadMax.
+
+<p>Los sexos actualmente soportados son:</p> 
+
+- **`FEMENINO`**
+- **`MASCULINO`**
+- **`ALEATORIO`**
+
+### GeneradorContraseñas:
+<p>Permitirá la generación de contraseñas aleatorias de diversos tipos. Los métodos implementados son:</p>
+
+- **`generarContraseña(TipoContraseña)`**: Permite crear una contraseña de longitud aleatoria (10-30 caracteres) con caracteres del tipo seleccionado. 
+- **`generarContraseña(int, TipoContraseña)`**: Permite crear una contraseña de longitud determinada con caracteres del tipo seleccionado.
+- **`generarContraseña(int, CharSequence)`**: Permite crear una contraseña de longitud determinada con caracteres procedentes del `CharSequence` o `String` proporcionado.
+
+<p>Los tipos de contraseñas actualmente soportados son:</p>
+
+- **`ALFANUMERICA`**: Caracteres tanto dígitos como alfabéticos mayúscula y minúscula.
+- **`NUMERICA`**: Caracteres de tipo dígito.
+- **`ALFABETICA`**: Caracteres alfabéticos mayúscula y minúscula.
+- **`ALFABETICA_MINUSCULA`**: Caracteres alfabéticos mayúscula.
+- **`ALFABETICA_MAYUSCULA`**: Caracteres alfabético minúscula.
+
+### GeneradorNombres:
+<p>Permitirá la generación de nombres femeninos y masculinos y apellidos. Los métodos implementados son:</p>
+
+- **`generarNombre(Sexo, Complejidad)`**: Permite generar un nombre aleatorio con determinado sexo y complejidad.
+- **`generarNombres(Sexo)`**: Permite generar el listado completo de nombres disponibles de un determinado sexo (o ambos).
+- **`generarNombres(int, Sexo)`**: Permite generar un listado con una cantidad de nombres únicos de un determinado sexo (o ambos). 
+- **`generarApellido(Complejidad)`**: Permite generar un apellido aleatorio con una determinada complejidad.
+- **`generarApellidos()`**: Permite generar el listado completo de apellidos disponibles.
+- **`generarApellidos(int)`**: Permite generar un listado con una cantidad de apellidos únicos.
+- **`generarNombreYApellidos(Sexo, Complejidad, Complejidad)`**: Permite generar un nombre y apellidos con un determinado sexo, complejidad del nombre y complejidad del apellido.
+- **`generarListadoNombreYApellidos(int, Sexo, Complejidad, Complejidad)`**: Permite generar un listado con una cantidad de nombres y apellidos con un determinado sexo, complejidad del nombre y complejidad del apellido.
+- **`generarInformeListadoNombreYApellidos(int, Sexo, Complejidad, Complejidad)`**: Permite crear un fichero txt que contiene un listado con una cantidad de nombres y apellidos con un determinado sexo, complejidad del nombre y complejidad del apellido.
+
+<p>Los sexos actualmente soportados son:</p> 
+
+- **`FEMENINO`**
+- **`MASCULINO`**
+- **`ALEATORIO`**
+
+<p>Las complejidades de nombres y apellidos actualmente soportadas son:</p>
+
+- **`SIMPLE`**: Nombres y apellidos con una sola ocurrencia.
+- **`COMPUESTA`**: Nombres y apellidos con doble ocurrencia.
+- **`ALEATORIO`**: Nombres y apellidos tanto **`SIMPLE`** como **`COMPUESTA`**.
+
+<p>Los listados de nombres y apellidos que sirven de piscina de datos son los siguientes:</p>
+
+- [Listado de nombres masculinos](assets/nombres/nombres_masculinos.txt).
+- [Listado de nombres femeninos](assets/nombres/nombres_femeninos.txt).
+- [Listado de apellidos](assets/nombres/apellidos.txt).
 
 ### ManejadorLookAndFeels:
 <p>Permitirá el manejo de los look and feels referenciados, de una manera sencilla permitiendo<br>
@@ -151,12 +223,14 @@ que estas pruebas son superficiales y no determinan la eficiencia de los algorit
   </b>
 </ul>
 
-# Enlaces
+# Enlaces:
+
 ## Youtube:
 - **[¿Cómo importar la api, vincularle el JavaDoc y trabajar con ella?](https://www.youtube.com/watch?v=hN1BojF_lsY)**
 
 
-## Google Drive
+## Google Drive:
 - **[Versión Estándar](https://drive.google.com/file/d/194eeuu4QhYpQj8gkoJ0_NuF5BbtkVAVs/view?usp=sharing)**
 - **[Versión Lite](https://drive.google.com/file/d/1X2FFDOlaKBD1-La_shhLjDKlPHXlY9lr/view?usp=sharing)**
+
 
