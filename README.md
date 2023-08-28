@@ -15,15 +15,27 @@ DocApi. Pueden ser vinculadas al proyecto como muestra el tutorial con enlace al
 de la mayoría de sus componentes visuales. En futuras versiones se continuará mejorando.</p>
 
 **Versión Actual**: 2023/07/04
-<br>**Enlace de descarga**: [descargar ultima versión.](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/releases/latest)
+- **Enlace de descarga en Github**: [descargar última versión.](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/releases/latest)
+- **Enlace de descarga en Google Drive**: [descargar última versión.](#google-drive)
 
 # Cambios de la última actualización:
   - **Nuevos componentes visuales**: Linea.
   - **Nuevos algoritmos con pruebas en consola**: Ordenamiento y Búsqueda.
 
 # Índice de Contenido:
-* [Utilidades](#utilidades)
-* [Validaciones](#ualidaciones)
+- [Componentes Actuales](#componentes-actuales)
+  - [Componentes Visuales](#componentes-visuales)
+  - [Utilidades](#utilidades)
+    - [Auxiliares](#auxiliares)
+    - [Auxiliares Visuales](#auxiliares-visuales)
+    - [ManejadorLookAndFeels](#manejadorlookandfeels) 
+    - [Validaciones](#validaciones)
+  - [Algoritmos](#algoritmos)
+    - [Ordenamiento](#ordenamiento)
+    - [Búsqueda](#búsqueda)
+- [Enlaces](#enlaces) 
+  - [Youtube](#youtube)
+  - [Google Drive](#google-drive)
 
 
 
@@ -122,7 +134,7 @@ que estas pruebas son superficiales y no determinan la eficiencia de los algorit
   </b>
 </ul>
 
-### Busqueda: 
+### Búsqueda: 
 <p>Presenta un <b>PruebaAlgoritmoBusqueda</b> que contiene pruebas en consola de tiempo de ejecución a los algoritmos de Busqueda. Tener en cuenta 
 que estas pruebas son superficiales y no determinan la eficiencia de los algoritmos.<br>Los algoritmos de búsqueda actualmente implementados son:</p>
 <ul>
@@ -137,15 +149,12 @@ que estas pruebas son superficiales y no determinan la eficiencia de los algorit
   </b>
 </ul>
 
-# Enlaces en Youtube
-<ul>
-  <li><b>¿Cómo importar la api, vincularle el JavaDoc y trabajar con ella</b>?: https://www.youtube.com/watch?v=hN1BojF_lsY.
-</ul>
+# Enlaces
+## Youtube:
+- **[¿Cómo importar la api, vincularle el JavaDoc y trabajar con ella?](https://www.youtube.com/watch?v=hN1BojF_lsY)**
 
 
-# Enlaces en Google Drive:
-<ul>
-  <li><b>Versión Estándar</b>: https://drive.google.com/file/d/194eeuu4QhYpQj8gkoJ0_NuF5BbtkVAVs/view?usp=sharing
-  <li><b>Versión Lite</b>: https://drive.google.com/file/d/1X2FFDOlaKBD1-La_shhLjDKlPHXlY9lr/view?usp=sharing
-</ul>
+## Google Drive
+- **[Versión Estándar](https://drive.google.com/file/d/194eeuu4QhYpQj8gkoJ0_NuF5BbtkVAVs/view?usp=sharing)**
+- **[Versión Lite](https://drive.google.com/file/d/1X2FFDOlaKBD1-La_shhLjDKlPHXlY9lr/view?usp=sharing)**
 
