@@ -15,12 +15,12 @@ DocApi. Pueden ser vinculadas al proyecto como muestra el tutorial con enlace al
 <p>La api.jar, en ambas versiones, puede ser ejecutadas para poder tener acceso a una prueba visual preliminar
 de la mayoría de sus componentes visuales. En futuras versiones se continuará mejorando.</p>
 
-> [!WARNING]
-> Existen secciones utilidades de la api que no fueron probadas totalmente, por lo que pueden existir bugs.
-
 **Versión Actual**: `2023/07/04`
 - **Enlace de descarga en Github**: [descargar última versión.](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/releases/latest)
 - **Enlace de descarga en Google Drive**: [descargar última versión.](#google-drive)
+
+> [!WARNING]
+> Existen secciones utilidades de la api que no fueron probadas totalmente, por lo que pueden existir bugs.
 
 # Cambios de la última actualización:
   - **Nuevos componentes visuales**: `Linea`.
