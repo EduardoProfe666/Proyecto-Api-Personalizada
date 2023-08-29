@@ -1,10 +1,5 @@
-<style>
-  .img{
-    width="10px"
-  }
-</style>
+<img src = assets/img/banner.png width="100%">
 
-![Banner](assets/img/banner.png){#identifier .img}
 # Api Personalizada en Java
 ![Static Badge](https://img.shields.io/badge/language-Java-red) [![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0) ![Static Badge](https://img.shields.io/badge/status-En%20Desarrollo-green) ![GitHub Release Date](https://img.shields.io/github/release-date/EduardoProfe666/Proyecto-Api-Personalizada)
 
@@ -66,166 +61,210 @@ Para poder importar la api puede ver el [siguiente video](https://www.youtube.co
 - Añadir el fichero copiado al Build Path del proyecto.
 - Usar la api 👾.
 
-![Proceso de Importacion](assets/gif/importacion.gif)
+<img src = assets/gif/importacion.gif width="100%">
 
 # Prueba Visual de la api:
 <p>La api contiene una prueba visual que permite comprobar los componentes visuales que se incluyen. Para poder acceder a ella 
 simplemente haga doble clic en el archivo .jar de la api (tanto en la versión estándar como en la versión lite).</p>
 
-![Api Visual](assets/gif/api%20visual.gif)
+<img src = assets/gif/api-visual.gif width="100%">
 
 # Componentes Actuales: 
 ## Componentes Visuales:
   - <b>`AvatarCircular`</b>: Permitirá la representación de un avatar circular con tamaño y color de borde variable, dada una imagen.
+
+<img src="assets/gif/avatar-circular.gif" width="100%">
+
   > Constructores:
   > ```java
   > AvatarCircular avatar = new AvatarCircular(new ImageIcon(ClaseBase.class.getResource("/img/avatar.png")),2);
   > ```
-  ![AvatarCircular](assets/gif/avatar%20circular.gif)
  
-  <br>
+  <br>  <br>
 
   - <b>`BotonAnimacion`</b>: Permitirá el modelado de un botón con animación al ser presionado.
+  
+  <img src="assets/gif/boton-animacion.gif" width="100%">
+
   > Constructores:
   > ```java
   > BotonAnimacion btn = new BotonAnimacion();
   > ```
-  ![BotonAnimacion](assets/gif/boton%20animacion.gif)
   
-  <br>
+  <br>  <br>
 
   - <b>`CampoCIValidado`</b>: Permitirá el empleo de un JFormattedTextField modificado para la validación en tiempo real del carnet de identidad. Una vez válido, extrae información del mismo, dígase edad, fecha de nacimiento y sexo.</li>
-  > Constructores:
+  
+  <img src="assets/gif/ci.gif" width="100%">
+
+> Constructores:
   > ```java
   > CampoCIValidado campo = new CampoCIValidado();
   > CampoCIValidado campo2 = new CampoCIValidado(new Date(),new Date());
   > ```
-  ![CampoCIValidado](assets/gif/ci.gif)    
+
   
-  <br>
+  <br>  <br>
 
   - <b>`Imagen`</b>: Permitirá la generación de una imagen que se reajuste automáticamente a las dimensiones dadas.
-  > Constructores:
+  
+<img src="assets/gif/imagen.gif" width="100%">
+
+> Constructores:
   > ```java
   > Imagen img = new Imagen(new ImageIcon(ClaseBase.class.getResource("/img/img.png")));
   > ```
-  ![Imagen](assets/gif/imagen.gif)  
 
-  <br>
+
+  <br>  <br>
 
   - <b>`ImagenAnimada`</b>: Permitirá modelar una imagen con una animación de movimiento sinusoide en dirección vertical u horizontal.
   > [!IMPORTANT]
   > El componente `ImagenAnimada` se encuentra en fase Beta, por tanto, no se encuentra completamente terminado ni optimizado ni probado.
   > Solo se garantiza su correcto funcionamiento en contenedores con Absolute Layout.
   
+  <img src="assets/gif/imagen-animada.gif" width="100%"> 
+
   > Constructores:
   > ```java
   > ImagenAnimada img = new ImagenAnimada(ClaseBase.class.getResource("/img/img.png"),50,50,14,100,Direccion.Vertical);
   > ```
-  ![Imagen Animada](assets/gif/imagen%20animada.gif)    
 
-  <br>
+  <br>  <br>
 
   - <b>`JLabelAnimacion`</b>: Permitirá la modelación de un JLabel con texto animado.
-  > Constructores:
+ 
+  <img src="assets/gif/label-animacion.gif" width="100%">
+
+ > Constructores:
   > ```java
   > JLabelAnimacion lbl = new JLabelAnimacion("HOLA", -1, -1, -1);
   > ```
-  ![JLabelAnimacion](assets/gif/label%20animacion.gif)    
 
-  <br>
+
+  <br>  <br>
   
   - <b>`JLabelHora`</b>: Permitirá la modelación de un reloj digital, con distintos formatos de hora.
-  > Constructores:
+ 
+  <img src="assets/gif/reloj.gif" width="100%">
+
+ > Constructores:
   > ```java
   > JLabelHora reloj = new JLabelHora(JLabelHora.FORMATO_PREDETERMINADO);
   > ```
-  ![JLabelHora](assets/gif/reloj.gif)  
+  
 
-  <br>
+  <br>  <br>
 
   - <b>`JLabelMultilineaMultialineado`</b>: Permitirá la modelación de un JLabel con capacidad de mostrar texto extenso en múltiples líneas y alinearlo de diversas formas, pudiendo estar justificado.
-  > Constructores:
+ 
+<img src="assets/gif/multilinea.gif" width="100%">
+
+ > Constructores:
   > ```java
   > JLabelMultilineaMultialineado lbl = new JLabelMultilineaMultialineado("JIIII", Alineacion.JUSTIFICADA);
   > ```
-  ![JlABE](assets/gif/multilinea.gif)    
 
-  <br>
+  <br>  <br>
 
   - <b>`JTextFieldModificado`</b>: Permitirá el empleo de un JTextField modificado, con un límite, validado o no con letras o dígitos, y con o sin efecto de sonido.
-  > Constructores:
+  
+<img src="assets/gif/jtextfield-modificado.gif" width="100%">
+
+> Constructores:
   > ```java
   > JTextFieldModificado text = new JTextFieldModificado();
   > ```
-  ![texto](assets/gif/jtextfield%20modificado.gif)  
 
-  <br>
+
+  <br>  <br>
 
   - <b>`Linea`</b>: Permitirá generar una línea, pudiendo ser personalizada con el grosor, color, orientación y el tipo de línea.</li>
-  > Constructores:
+  
+<img src="assets/gif/linea.gif" width="100%"> 
+
+> Constructores:
   > ```java
   > Linea lin = new Linea(Linea.ORIENTACION_VERTICAL, Linea.LINEA_DISCONTINUA);
   > ```
-  ![LInea](assets/gif/linea.gif)    
 
-  <br>
+
+  <br>  <br>
 
   - <b>`Notificaciones`</b>: Permitirá el empleo de un sistema de notificaciones, con posiciones variables y diferentes tipos de notificaciones.</li>
-  > Constructores:
+  
+<img src="assets/gif/notificacion.gif" width="100%">
+
+> Constructores:
   > ```java
   > Notificaciones ntf = new Notificaciones("HOLA","JELOU",2,Notificaciones.POSICION_INF_DER, Notificaciones.MENSAJE_EXITO);
   > ```
-  ![Not](assets/gif/notificacion.gif)  
-  
-  <br>  
+
+  <br>  <br>
 
   - <b>`PanelAnimacionCurvas`</b>: Permitirá la modelación de un panel con animación. Puede ser empleado en pantallas de carga.
-  > Constructores:
+ 
+<img src="assets/gif/panel-animacion.gif" width="100%">  
+
+ > Constructores:
   > ```java
   > PanelAnimacionCurvas pan = new PanelAnimacionCurvas((Color) null, (Color) null, (Color) null, (Color) null);
   > ```
-  ![PanelAnimacionCurvas](assets/gif/panel%20animacion.gif)    
 
-  <br>
+
+  <br>  <br>
 
   - <b>`PanelBordeOval`</b>: Permitirá la modelación de un panel con bordes ovales variables, sin necesidad de ser equitativos.
-  > Constructores:
+ 
+<img src="assets/gif/curva.gif" width="100%"> 
+
+ > Constructores:
   > ```java
   > PanelBordeOval pan = new PanelBordeOval(20);
   > PanelBordeOval pan = new PanelBordeOval(20,15,10,30)
   > ```
-  ![PanelBorde](assets/gif/curva.gif)    
 
-  <br>
+  <br>  <br>
 
   - <b>`PanelGradiente`</b>: Permitirá la modelación de un panel gradiente. Es el empleado en PanelAnimacionCurvas.
-  > Constructores:
+  
+<img src="assets/gif/panel-gradiente.gif" width="100%">
+
+> Constructores:
   > ```java
   > PanelGradiente pan = new PanelGradiente(Color.YELLOW,Color.GREEN);
   > ```
-  ![Panel](assets/gif/panel%20gradiente.gif)    
 
-  <br>
+  <br>  <br>
 
   - <b>`PanelGradienteH`</b>: Permitirá la modelación de un panel gradiente con sentido horizontal.
-  > Constructores:
+  
+<img src="assets/gif/panel-gradiente-h.gif" width="100%">
+
+> Constructores:
   > ```java
   > PanelGradienteH pan = new PanelGradienteH(Color.YELLOW,Color.GREEN);
-  > ```
-  ![Panel](assets/gif/panel%20gradiente.gif)
+  > ``
   
-  <br>
+  <br>  <br>
 
   - <b></b>`PanelGradienteV`</b>: Permitirá la modelación de un panel gradiente con sentido vertical.
-  > Constructores:
+ 
+<img src="assets/gif/panel-gradiente-v.gif" width="100%">
+
+ > Constructores:
   > ```java
   > PanelGradienteV pan = new PanelGradienteV(Color.YELLOW,Color.GREEN);
   > ```
-  ![Panel](assets/gif/panel%20gradiente.gif)  
+
 
 ## Utilidades:
-<p>Todos los métodos de las utilidades se emplean de manera estática</p>
+
+> [!IMPORTANT]
+> Todos los métodos de las utilidades se emplean de manera estática. Por ejemplo:
+> ```java
+> String ci_generado = GeneradorCICubano.generarCICubano(Sexo.MASCULINO,36);
+> ```
 
 ### Auxiliares:
   - <b>`convertirFechaNacimientoCiDate`(String)</b>: Permite extraer la fecha de nacimiento del carnet de identidad.
@@ -302,7 +341,7 @@ simplemente haga doble clic en el archivo .jar de la api (tanto en la versión e
 
 ### ManejadorLookAndFeels:
 
-![ORd](assets/gif/look%20and%20feel.gif)
+<img src="assets/gif/look-and-feel.gif" width="100%">
 
 <p>Permitirá el manejo de los look and feels referenciados, de una manera sencilla permitiendo<br>
 realizarlo incluso en tiempo de ejecución. Los Look And Feels actualmente soportados son:</p>
@@ -340,11 +379,16 @@ realizarlo incluso en tiempo de ejecución. Los Look And Feels actualmente sopor
 *   <b>`~~validarRangoFecha(Date, Date, Date)~~`</b>: Permite validar que una fecha se encuentre en un rango de fechas dado
 
 ## Algoritmos:
-<p>Todos los algoritmos se emplean de manera estática</p>
+> [!IMPORTANT]
+> Todos los algoritmos se emplean de manera estática. Por ejemplo:
+> ```java
+> List<Integer> lista = new ArrayList<>(Arrays.asList(4034,56324,2311,2,5,3));
+> int indice = Busqueda.fibonacciSearch(lista,5);
+> ```
 
 ### Ordenamiento:
 
-![ORd](assets/gif/ordenamiento.gif)
+<img src="assets/gif/ordenamiento.gif" width="100%">
 
 <p>Presenta un <b>PruebaAlgoritmoOrdenamiento</b> que contiene pruebas en consola de tiempo de ejecución a los algoritmos de Ordenamiento. Tener en cuenta 
 que estas pruebas son superficiales y no determinan la eficiencia de los algoritmos.<br>Los algoritmos de ordenamiento actualmente implementados son:</p>
@@ -370,7 +414,7 @@ que estas pruebas son superficiales y no determinan la eficiencia de los algorit
 
 ### Búsqueda: 
 
-![ORd](assets/gif/busqueda.gif)
+<img src="assets/gif/busqueda.gif" width="100%">
 
 <p>Presenta un <b>PruebaAlgoritmoBusqueda</b> que contiene pruebas en consola de tiempo de ejecución a los algoritmos de Busqueda. Tener en cuenta 
 que estas pruebas son superficiales y no determinan la eficiencia de los algoritmos.<br>Los algoritmos de búsqueda actualmente implementados son:</p>

@@ -7,6 +7,13 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
+/**
+ *	Prueba de eficiencia en consola de los algoritmos de busqueda implementados en {@link Busqueda}. 
+ * 
+ * @version 04/07/2023
+ * @author EduardoProfe
+ *
+ */
 public class PruebaAlgoritmoBusqueda {
 	private PruebaAlgoritmoBusqueda() {}
 
