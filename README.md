@@ -1,5 +1,5 @@
-![Banner](assets/img/banner.png)
-# Proyecto-Api-Personalizada 
+![Banner](assets/img/banner.png) 
+# Api Personalizada en Java
 ![Static Badge](https://img.shields.io/badge/language-Java-red) [![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0) ![Static Badge](https://img.shields.io/badge/status-En%20Desarrollo-green) ![GitHub Release Date](https://img.shields.io/github/release-date/EduardoProfe666/Proyecto-Api-Personalizada)
 
 <p>Api personalizada con componentes visuales personalizados y utilidades.</p>
@@ -31,9 +31,6 @@ de la mayoría de sus componentes visuales. En futuras versiones se continuará 
 
 # Índice de Contenido:
 
-> [!NOTE]
-> Algunas imágenes tardan un tiempo prolongado en cargarse en dependencia de la velocidad de conexión a Intenet.
-
 - [Importación de la api](#importación-de-la-api)
 - [Prueba Visual de la api](#prueba-visual-de-la-api)
 - [Componentes Actuales](#componentes-actuales)
@@ -52,6 +49,9 @@ de la mayoría de sus componentes visuales. En futuras versiones se continuará 
 - [Enlaces](#enlaces) 
   - [Youtube](#youtube)
   - [Google Drive](#google-drive)
+
+> [!NOTE]
+> Algunas imágenes tardan un tiempo prolongado en cargarse en dependencia de la velocidad de conexión a Intenet.
 
 # Importación de la api:
 Para poder importar la api puede ver el [siguiente video](https://www.youtube.com/watch?v=hN1BojF_lsY) en youtube donde se explica paso a paso este proceso.
