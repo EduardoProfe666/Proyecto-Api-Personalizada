@@ -1,10 +1,10 @@
 <style>
-  img[alt=Proceso de Importacion]{
+  .img{
     width="10px"
   }
 </style>
 
-![Banner](assets/img/banner.png)
+![Banner](assets/img/banner.png){#identifier .img}
 # Api Personalizada en Java
 ![Static Badge](https://img.shields.io/badge/language-Java-red) [![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0) ![Static Badge](https://img.shields.io/badge/status-En%20Desarrollo-green) ![GitHub Release Date](https://img.shields.io/github/release-date/EduardoProfe666/Proyecto-Api-Personalizada)
 
