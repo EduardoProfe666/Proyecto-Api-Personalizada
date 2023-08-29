@@ -29,6 +29,10 @@ de la mayoría de sus componentes visuales. En futuras versiones se continuará 
   - **Corrección de errores menores**.
 
 # Índice de Contenido:
+
+> [!NOTE]
+> Algunas imágenes tardan un tiempo prolongado en cargarse en dependencia de la velocidad de conexión a Intenet.
+
 - [Importación de la api](#importación-de-la-api)
 - [Prueba Visual de la api](#prueba-visual-de-la-api)
 - [Componentes Actuales](#componentes-actuales)
