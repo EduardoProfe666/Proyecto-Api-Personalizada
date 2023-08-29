@@ -262,9 +262,9 @@ simplemente haga doble clic en el archivo .jar de la api (tanto en la versión e
 
 > [!IMPORTANT]
 > Todos los métodos de las utilidades se emplean de manera estática. Por ejemplo:
-> ```java
-> String ci_generado = GeneradorCICubano.generarCICubano(Sexo.MASCULINO,36);
-> ```
+  > ```java
+  > String ci_generado = GeneradorCICubano.generarCICubano(Sexo.MASCULINO,36);
+  > ```
 
 ### Auxiliares:
   - <b>`convertirFechaNacimientoCiDate`(String)</b>: Permite extraer la fecha de nacimiento del carnet de identidad.
@@ -381,10 +381,10 @@ realizarlo incluso en tiempo de ejecución. Los Look And Feels actualmente sopor
 ## Algoritmos:
 > [!IMPORTANT]
 > Todos los algoritmos se emplean de manera estática. Por ejemplo:
-> ```java
-> List<Integer> lista = new ArrayList<>(Arrays.asList(4034,56324,2311,2,5,3));
-> int indice = Busqueda.fibonacciSearch(lista,5);
-> ```
+  > ```java
+  > List<Integer> lista = new ArrayList<>(Arrays.asList(4034,56324,2311,2,5,3));
+  > int indice = Busqueda.fibonacciSearch(lista,5);
+  > ```
 
 ### Ordenamiento:
 
