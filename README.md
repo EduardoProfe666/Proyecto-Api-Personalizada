@@ -1,4 +1,4 @@
-![Banner](assets/img/banner.png) 
+![Banner](assets/img/banner.png)
 # Api Personalizada en Java
 ![Static Badge](https://img.shields.io/badge/language-Java-red) [![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0) ![Static Badge](https://img.shields.io/badge/status-En%20Desarrollo-green) ![GitHub Release Date](https://img.shields.io/github/release-date/EduardoProfe666/Proyecto-Api-Personalizada)
 
@@ -60,7 +60,7 @@ Para poder importar la api puede ver el [siguiente video](https://www.youtube.co
 - Añadir el fichero copiado al Build Path del proyecto.
 - Usar la api 👾.
 
-![Proceso de Importacion](assets/gif/importacion.gif)
+![Proceso de Importacion](assets/gif/importacion.gif){ width=100% } 
 
 # Prueba Visual de la api:
 <p>La api contiene una prueba visual que permite comprobar los componentes visuales que se incluyen. Para poder acceder a ella 
