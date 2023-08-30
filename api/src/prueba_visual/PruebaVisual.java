@@ -62,11 +62,16 @@ import componentesVisuales.JLabelMultilineaMultialineado.Alineacion;
 import componentesVisuales.JTextFieldModificado;
 import componentesVisuales.Linea;
 import componentesVisuales.Notificaciones;
+import componentesVisuales.NotificacionesModernas;
 import componentesVisuales.PanelAnimacionCurvas;
 import componentesVisuales.PanelBordeOval;
 import componentesVisuales.PanelGradiente;
 import componentesVisuales.PanelGradienteH;
 import componentesVisuales.PanelGradienteV;
+import componentesVisuales.RelojAnalogico;
+import componentesVisuales.CarruselImagenes;
+import componentesVisuales.NotificacionesModernas.Tipo;
+import componentesVisuales.NotificacionesModernas.Localizacion;
 
 /**
  * 
@@ -176,6 +181,20 @@ public class PruebaVisual extends JFrame {
     private JLabel exponentialSearch;
     private JLabel fibonacciSearch;
     private JLabel ternarySearch;
+    private JPanel panelReloj;
+    private JLabel lblRelojanalogico;
+    private JPanel panelCarrusel;
+    private JLabel lblPruebaDeComponente_10;
+	private CarruselImagenes carruselImagenes;
+	private JPanel panelNotificacionesModernas;
+	private JLabel lblPruebaDeComponente_11;
+	private JTextField mensaje;
+	private JSpinner duracion;
+	private JComboBox<Localizacion> localizacion;
+	private JComboBox<Tipo> tipo;
+	private JButton notificarFlatLaf;
+	private JLabelMultilineaMultialineado mensajeFlatLaf;
+	private JLabel mensajeNotificar;
 
 	/**
 	 * Create the frame.
@@ -184,7 +203,7 @@ public class PruebaVisual extends JFrame {
 	 */
 	public PruebaVisual() throws ParseException, UnsupportedLookAndFeelException {
 		setResizable(false);
-		setTitle("Prueba Visual de Api ver.28/08/2023 \u00A9EduardoProfe ");
+		setTitle("Prueba Visual de Api ver.29/08/2023 \u00A9EduardoProfe ");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 800, 600);
 		setLocationRelativeTo(null);
@@ -211,6 +230,7 @@ public class PruebaVisual extends JFrame {
 			}
 		});
 		imagenAnimada = new ImagenAnimada(PruebaVisual.class.getResource("/imagenes_prueba/gato.png"), 1, 1, 0, 0, null);
+		carruselImagenes = new CarruselImagenes(0);
 		
 		tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		tabbedPane.addChangeListener(new ChangeListener() {
@@ -235,6 +255,10 @@ public class PruebaVisual extends JFrame {
 					imagenAnimada.detenerAnimacion();
 				else
 					imagenAnimada.iniciarAnimacion();
+				if(tabbedPane.getSelectedIndex()!=15)
+					carruselImagenes.detenerAnimacion();
+				else
+					carruselImagenes.iniciarAnimacion();
 			}
 		});
 		tabbedPane.setFont(new Font("Dialog", Font.BOLD, 16));
@@ -1015,14 +1039,13 @@ public class PruebaVisual extends JFrame {
 		
 		labelMult = new JLabelMultilineaMultialineado("", (Alineacion) null);
 		labelMult.setFont(new Font("Tahoma", Font.PLAIN, 28));
-		labelMult.setText("");
 		labelMult.setBounds(25, 157, 723, 326);
 		panelTexto3.add(labelMult);
 		
 		texto_alin = new JTextField();
 		texto_alin.addCaretListener(new CaretListener() {
 			public void caretUpdate(CaretEvent e) {
-				labelMult.setTexto(texto_alin.getText());
+				labelMult.setText(texto_alin.getText());
 			}
 		});
 		texto_alin.setFont(new Font("Tahoma", Font.PLAIN, 18));
@@ -1436,6 +1459,123 @@ public class PruebaVisual extends JFrame {
         Collections.sort(this.listaNB);
         this.busqueda(Integer.valueOf(this.posNBusqueda.getValue().toString()));
 		
+		panelReloj = new JPanel();
+		tabbedPane.addTab("RelojAnalogico", null, panelReloj, null);
+		panelReloj.setLayout(null);
+		
+		lblRelojanalogico = new JLabel("Prueba de Componente Visual: RelojAnalogico");
+		lblRelojanalogico.setBounds(188, 5, 386, 23);
+		lblRelojanalogico.setHorizontalAlignment(SwingConstants.CENTER);
+		lblRelojanalogico.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		panelReloj.add(lblRelojanalogico);
+		
+		RelojAnalogico relojAnalogico = new RelojAnalogico();
+		relojAnalogico.setBounds(173, 69, 417, 360);
+		panelReloj.add(relojAnalogico);
+		
+		panelCarrusel = new JPanel();
+		panelCarrusel.setLayout(null);
+		tabbedPane.addTab("CarruselImagenes", null, panelCarrusel, null);
+		
+		lblPruebaDeComponente_10 = new JLabel("Prueba de Componente Visual: CarruselImagenes");
+		lblPruebaDeComponente_10.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPruebaDeComponente_10.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		lblPruebaDeComponente_10.setBounds(137, 5, 489, 23);
+		panelCarrusel.add(lblPruebaDeComponente_10);
+		
+		carruselImagenes = new CarruselImagenes(700);
+		carruselImagenes.addImage(new ImageIcon(PruebaVisual.class.getResource("/imagenes_prueba/a01.jpg")));
+		carruselImagenes.addImage(new ImageIcon(PruebaVisual.class.getResource("/imagenes_prueba/avatar2.jpg")));
+		carruselImagenes.addImage(new ImageIcon(PruebaVisual.class.getResource("/imagenes_prueba/avatar1.jpg")));
+		carruselImagenes.setBounds(137, 101, 489, 309);
+		panelCarrusel.add(carruselImagenes);
+		
+		panelNotificacionesModernas = new JPanel();
+		panelNotificacionesModernas.setLayout(null);
+		tabbedPane.addTab("NotificacionesModernas", null, panelNotificacionesModernas, null);
+		
+		NotificacionesModernas.getInstancia().setJFrame(this);
+		
+		lblPruebaDeComponente_11 = new JLabel("Prueba de Componente Visual: NotificacionesModernas");
+		lblPruebaDeComponente_11.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPruebaDeComponente_11.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		lblPruebaDeComponente_11.setBounds(137, 120, 489, 23);
+		panelNotificacionesModernas.add(lblPruebaDeComponente_11);
+		
+		JLabel label_3_1 = new JLabel("Mensaje:");
+		label_3_1.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		label_3_1.setBounds(20, 174, 83, 32);
+		panelNotificacionesModernas.add(label_3_1);
+		
+		mensaje = new JTextField();
+		mensaje.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		mensaje.setColumns(10);
+		mensaje.setBounds(105, 175, 648, 32);
+		panelNotificacionesModernas.add(mensaje);
+		
+		JLabel lblDuracion = new JLabel("Duracion (ms):");
+		lblDuracion.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		lblDuracion.setBounds(20, 238, 141, 30);
+		panelNotificacionesModernas.add(lblDuracion);
+		
+		duracion = new JSpinner();
+		duracion.setModel(new SpinnerNumberModel(new Integer(2000), new Integer(0), null, new Integer(1)));
+		duracion.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		duracion.setBounds(149, 239, 100, 30);
+		panelNotificacionesModernas.add(duracion);
+		
+		JLabel lblLocalizacion = new JLabel("Localizacion:");
+		lblLocalizacion.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		lblLocalizacion.setBounds(266, 237, 123, 30);
+		panelNotificacionesModernas.add(lblLocalizacion);
+		
+		localizacion = new JComboBox<Localizacion>();
+		localizacion.setModel(new DefaultComboBoxModel<Localizacion>(Localizacion.values()));
+		localizacion.setSelectedIndex(0);
+		localizacion.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		localizacion.setBounds(376, 238, 154, 30);
+		panelNotificacionesModernas.add(localizacion);
+		
+		JLabel lblTipoDeNotificacin_1 = new JLabel("Tipo:");
+		lblTipoDeNotificacin_1.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		lblTipoDeNotificacin_1.setBounds(540, 238, 54, 30);
+		panelNotificacionesModernas.add(lblTipoDeNotificacin_1);
+		
+		tipo = new JComboBox<Tipo>();
+		tipo.setModel(new DefaultComboBoxModel<Tipo>(Tipo.values()));
+		tipo.setSelectedIndex(0);
+		tipo.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		tipo.setBounds(599, 239, 154, 30);
+		panelNotificacionesModernas.add(tipo);
+		
+		notificarFlatLaf = new JButton();
+		notificarFlatLaf.setEnabled(false);
+		notificarFlatLaf.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				NotificacionesModernas.getInstancia().show((Tipo)tipo.getSelectedItem(), (Localizacion)localizacion.getSelectedItem(), Integer.valueOf(duracion.getValue().toString()), mensaje.getText());
+			}
+		});
+		notificarFlatLaf.setText("Notificaci\u00F3n");
+		notificarFlatLaf.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		notificarFlatLaf.setBounds(561, 304, 192, 55);
+		panelNotificacionesModernas.add(notificarFlatLaf);
+		
+		mensajeFlatLaf = new JLabelMultilineaMultialineado((String) null, (Alineacion) null);
+		mensajeFlatLaf.setForeground(Color.RED);
+		mensajeFlatLaf.setAlineacion(Alineacion.CENTRADA);
+		mensajeFlatLaf.setFont(new Font("Tahoma", Font.BOLD, 19));
+		mensajeFlatLaf.setText("Solamente funciona con componentes que tengan\r\ninstalado un look and feel de FlatLaf. Cambie el look and feel en la pesta\u00F1a Utilidades-Modelos");
+		mensajeFlatLaf.setBounds(137, 11, 517, 80);
+		panelNotificacionesModernas.add(mensajeFlatLaf);
+		
+		mensajeNotificar = new JLabel("Intenta notificar varias veces seguidas ;)");
+		mensajeNotificar.setEnabled(false);
+		mensajeNotificar.setToolTipText("Intenta notificar varias veces seguidas ;)");
+		mensajeNotificar.setHorizontalAlignment(SwingConstants.CENTER);
+		mensajeNotificar.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		mensajeNotificar.setBounds(160, 320, 418, 23);
+		panelNotificacionesModernas.add(mensajeNotificar);
+		
 		panelUtilsModelos = new JPanel();
 		tabbedPane.addTab("Utilidades-Modelos", null, panelUtilsModelos, null);
 		
@@ -1469,6 +1609,10 @@ public class PruebaVisual extends JFrame {
 					try {
 						ManejadorLookAndFeels.setLookAndFeelDinamico(laf.getSelectedIndex()-1,rootPane);
 						panelAnimacionCurvas_1.detenerAnimacion();
+						boolean b = laf.getSelectedIndex()-1>=4 && laf.getSelectedIndex()-1<=37;
+						mensajeFlatLaf.setVisible(!b);
+						mensajeNotificar.setEnabled(b);
+						notificarFlatLaf.setEnabled(b);
 					} catch (UnsupportedLookAndFeelException e1) {
 						e1.printStackTrace();
 					} 
@@ -1477,6 +1621,7 @@ public class PruebaVisual extends JFrame {
 		});
 		laf.setFont(new Font("Tahoma", Font.PLAIN, 17));
 		laf.setModel(new DefaultComboBoxModel<LookAndFeels>(LookAndFeels.values()));
+		laf.setSelectedIndex(0);
 		laf.setBounds(233, 100, 223, 30);
 		panelUtilsModelos.add(laf);
 

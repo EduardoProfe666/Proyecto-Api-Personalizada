@@ -1,14 +1,19 @@
 <img src = assets/img/banner.png width="100%">
 
 # Api Personalizada en Java
-![Static Badge](https://img.shields.io/badge/language-Java-red) [![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0) ![Static Badge](https://img.shields.io/badge/status-En%20Desarrollo-green) ![GitHub Release Date](https://img.shields.io/github/release-date/EduardoProfe666/Proyecto-Api-Personalizada)
+[![Languages](https://img.shields.io/github/languages/top/EduardoProfe666/Proyecto-Api-Personalizada)](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada)
+[![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0) 
+![Static Badge](https://img.shields.io/badge/status-development-green) 
+[![Latest Version](https://img.shields.io/github/release/EduardoProfe666/Proyecto-Api-Personalizada.svg)](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/releases) 
+![GitHub Release Date](https://img.shields.io/github/release-date/EduardoProfe666/Proyecto-Api-Personalizada)
+[![Last Commit](https://img.shields.io/github/last-commit/EduardoProfe666/Proyecto-Api-Personalizada)](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/commits/master)
 
 <p>Api personalizada con componentes visuales personalizados y utilidades.</p>
 
 <p>Para el correcto funcionamiento de la api es necesario al menos <b>Java 1.8</b>. Todos los componentes visuales de la api fueron creados y, por tanto, son compatibles con <b>Java Swing</b>.</p>
 
 <p>Existen dos versiones, una con todas las funcionalidades, y una versión lite
-sin el ManejadorLookAndFeels. Si se usa la Lite, tener en cuenta que 
+sin el ManejadorLookAndFeels ni NotificacionesModernas. Si se usa la Lite, tener en cuenta que 
 algunos componentes visuales se ven mejor con un Look and Feel diferente
 al predeterminado.</p>
 
@@ -19,15 +24,14 @@ DocApi. Pueden ser vinculadas al proyecto como muestra el tutorial con enlace al
 <p>La api.jar, en ambas versiones, puede ser ejecutada para poder tener acceso a una prueba visual preliminar
 de la mayoría de sus componentes visuales. En futuras versiones se continuará mejorando.</p>
 
-**Versión Actual**: `2023/08/28`
+**Versión Actual**: `2023/08/29`
 - **Enlace de descarga en Github**: [descargar última versión.](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/releases/latest)
 - **Enlace de descarga en Google Drive**: [descargar última versión.](#google-drive)
 > [!WARNING]
 > Existen secciones de utilidades de la api que no fueron probadas correctamente, por lo que pueden existir bugs.
 
 # Cambios de la última actualización:
-  - **Nuevos componentes visuales**: `JLabelMultilineaMultialineado` e `ImagenAnimada`(Beta).
-  - **Nuevas utilidades**: `GeneradorNombres`, `GeneradorContraseñas` y `GeneradorCICubano`.
+  - **Nuevos componentes visuales**: `RelojAnalogico`, `NotificacionesModernas` y `CarruselImagenes`.
   - **Corrección de errores menores**.
 
 # Índice de Contenido:
@@ -93,7 +97,7 @@ simplemente haga doble clic en el archivo .jar de la api (tanto en la versión e
   
   <br>  <br>
 
-  - <b>`CampoCIValidado`</b>: Permitirá el empleo de un JFormattedTextField modificado para la validación en tiempo real del carnet de identidad. Una vez válido, extrae información del mismo, dígase edad, fecha de nacimiento y sexo.</li>
+  - <b>`CampoCIValidado`</b>: Permitirá el empleo de un JFormattedTextField modificado para la validación en tiempo real del carnet de identidad. Una vez válido, extrae información del mismo, dígase edad, fecha de nacimiento y sexo.
   
   <img src="assets/gif/ci.gif" width="100%">
 
@@ -103,6 +107,23 @@ simplemente haga doble clic en el archivo .jar de la api (tanto en la versión e
   > CampoCIValidado campo2 = new CampoCIValidado(new Date(),new Date());
   > ```
 
+  <br>  <br>
+
+   - <b>`CarruselImagenes`</b>: Permitirá el empleo de un carrusel de imágenes.
+  
+  <img src="assets/gif/carrusel.gif" width="100%">
+
+> Constructores:
+  > ```java
+  > CarruselImagenes carrusel = new CarruselImagenes(700);
+  > ```
+
+> Ejemplo de Uso:
+  > ```java
+  > carrusel.addImage(ClaseBase.class.getResource("/imagenes/1.jpg"));
+  > carrusel.addImage(ClaseBase.class.getResource("/imagenes/2.jpg"));
+  > carrusel.iniciarAnimacion();
+  > ```
   
   <br>  <br>
 
@@ -191,12 +212,44 @@ simplemente haga doble clic en el archivo .jar de la api (tanto en la versión e
 
   <br>  <br>
 
-  - <b>`Notificaciones`</b>: Permitirá el empleo de un sistema de notificaciones, con posiciones variables y diferentes tipos de notificaciones.</li>
+  - <b>`Notificaciones`</b>: Permitirá el empleo de un sistema de notificaciones, con posiciones variables dentro de la pantalla y diferentes tipos de notificaciones.</li>
   
 <img src="assets/gif/notificacion.gif" width="100%">
 
-> Constructores:
+> Las posiciones de las notificaciones actualmente soportadas son:
+> - POSICION_SUP_IZQ = 0
+> - POSICION_SUP_DER = 1
+> - POSICION_INF_IZQ = 2
+> - POSICION_INF_DER = 3
+
+> Los tipos de notificaciones actualmente soportados son:
+> - ERROR
+> - ADVERTENCIA
+> - INFORMACION
+> - EXITO
+
+> Ejemplo de uso:
   > ```java
+  > Notificaciones.lanzarNotificacion("HOLA","JELOU",2,Notificaciones.POSICION_INF_DER, Notificaciones.MENSAJE_EXITO);
+  > ```
+
+  <br>  <br>
+
+  - <b>`NotificacionesModernas`</b>: Permitirá el empleo de un sistema de notificaciones modernas, con posiciones variables dentro del componente especificado y diferentes tipos de notificaciones. Incluye la posibilidad de notificar en cascada</li>
+  > [!WARNING]
+  > Solamente es compatible con componentes que tengan instalado un Look and Feel de `FlatLaf`. En dependencia del `FlatLaf` empleado será la visual del componente.
+
+<img src="assets/gif/notificaciones-modernas.gif" width="100%">
+
+> [!IMPORTANT]
+  > - `NotificacionesModernas` implementa el patrón `Singletone` por lo que para poder acceder a los métodos de la clase se debe "capturar" de la forma `NotificacionesModernas.getInstancia();`
+  > - Lo primero que se debe realizar es instalar el sistema de notificaciones en un componente; preferiblemente un `JFrame` o un `JDialog`. Luego se pueden usar los métodos restantes.  
+
+> Ejemplo de uso:
+  > ```java
+  > JFrame frame = new JFrame();
+  > NotificacionesModernas.getInstancia().setJFrame(frame);
+  > NotificacionesModernas.getInstancia().show(Tipo.INFO,Localizacion.INF_DER,3000,"Hola!");
   > Notificaciones ntf = new Notificaciones("HOLA","JELOU",2,Notificaciones.POSICION_INF_DER, Notificaciones.MENSAJE_EXITO);
   > ```
 
@@ -255,6 +308,17 @@ simplemente haga doble clic en el archivo .jar de la api (tanto en la versión e
  > Constructores:
   > ```java
   > PanelGradienteV pan = new PanelGradienteV(Color.YELLOW,Color.GREEN);
+  > ```
+
+  <br> <br>
+
+  - <b></b>`RelojAnalogico`</b>: Permitirá la modelación de un reloj analógico.
+ 
+<img src="assets/gif/reloj-analogico.gif" width="100%">
+
+ > Constructores:
+  > ```java
+  > RelojAnalogico rel = new RelojAnalogico();
   > ```
 
 
@@ -359,6 +423,17 @@ realizarlo incluso en tiempo de ejecución. Los Look And Feels actualmente sopor
   <li>Tonic
   <li>JGoodies</b>
 </ul>
+
+> Ejemplo de uso estático (Dentro del constructor del componente):
+> ```java
+>   ManejadorLookAndFeels.setLookAndFeel(ManejadorLookAndFeels.FLATLAF_DARK);
+> ```
+
+> Ejemplo de uso dinámico (Fuera del constructor del componente):
+> ```java
+>   JFrame frame = new JFrame();
+>   ManejadorLookAndFeels.setLookAndFeel(ManejadorLookAndFeels.FLATLAF_DARK, frame);
+> ```
 
 ### Validaciones:
 *   <b>`validarNumeroRango(double, double, double)`</b>: Permite validar si un valor se encuentra en un rango dado.

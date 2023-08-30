@@ -69,7 +69,7 @@ import de.muntjak.tinylookandfeel.TinyLookAndFeel;
  * 
  * Clase que permitirá el manejo de los look and feels de forma sencilla, pudiendo incluso
  * cambiarla en tiempo de ejecución. Incorpora los lafs predeterminados, los de FlatLaf, los de JTattoo, Liquid,
- * Nimrod, Tiny, Tonic.
+ * Nimrod, Tiny, Tonic y JGoodies.
  * 
  * <h1>Ver:</h1>{@link #setLookAndFeel(int)}<br>{@link #setLookAndFeelDinamico(int, Component)}<br><br>
  * @version 24/11/2022

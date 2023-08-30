@@ -46,15 +46,16 @@ public class JLabelMultilineaMultialineado extends JLabel{
 	public JLabelMultilineaMultialineado(String texto, Alineacion alineacion){
 		this.texto = texto;
 		this.setAlineacion(alineacion);
-		setText(texto);
+		this.setText(texto);
 	}
 	
 	/**
 	 * {@link #texto}
 	 * @param texto
 	 */
-	public void setTexto(String texto){
-		this.texto=texto;
+	@Override
+	public void setText(String texto){
+		this.texto=texto!=null?texto:"";
 		super.setText("<html><style>body{text-align: "+alineaciones.get(alineacion)+";}</style><body>"+texto+"</body></html>");
 	}
 	
@@ -84,7 +85,7 @@ public class JLabelMultilineaMultialineado extends JLabel{
 		}
 		else{
 			this.alineacion=alineacion;
-			setTexto(texto);
+			this.setText(texto);
 		}
 	}
 	

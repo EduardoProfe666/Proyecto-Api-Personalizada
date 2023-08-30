@@ -18,7 +18,7 @@ import javax.swing.JComponent;
 /**
  *  
  * Componente visual que permitirá la representación de un avatar
- * circular, con tamaño de borde variable. 
+ * circular, con tamaño de borde variable. Para cambiar el color del borde use el método {@code setForeground(Color)} 
  * 
  * <h1>Ver:</h1>{@link #avatar}<br>{@link #tamBorde}<br><br>
  * @version 28/10/2022
