@@ -2,15 +2,13 @@
 
 # Api Personalizada en Java
 [![Languages](https://img.shields.io/github/languages/top/EduardoProfe666/Proyecto-Api-Personalizada)](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada)
-[![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0) 
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://tlo.mit.edu/learn-about-intellectual-property/software-and-open-source-licensing/open-source-licensing) 
 ![Static Badge](https://img.shields.io/badge/status-development-green) 
 [![Latest Version](https://img.shields.io/github/release/EduardoProfe666/Proyecto-Api-Personalizada.svg)](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/releases) 
 ![GitHub Release Date](https://img.shields.io/github/release-date/EduardoProfe666/Proyecto-Api-Personalizada)
 [![Last Commit](https://img.shields.io/github/last-commit/EduardoProfe666/Proyecto-Api-Personalizada)](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/commits/master)
 
 <p>Api personalizada con componentes visuales personalizados y utilidades.</p>
-
-<p>Para el correcto funcionamiento de la api es necesario al menos <b>Java 1.8</b>. Todos los componentes visuales de la api fueron creados y, por tanto, son compatibles con <b>Java Swing</b>.</p>
 
 <p>Existen dos versiones, una con todas las funcionalidades, y una versión lite
 sin el ManejadorLookAndFeels ni NotificacionesModernas. Si se usa la Lite, tener en cuenta que 
@@ -29,6 +27,9 @@ de la mayoría de sus componentes visuales. En futuras versiones se continuará 
 - **Enlace de descarga en Google Drive**: [descargar última versión.](#google-drive)
 > [!WARNING]
 > Existen secciones de utilidades de la api que no fueron probadas correctamente, por lo que pueden existir bugs.
+
+> [!IMPORTANT]
+> Para el correcto funcionamiento de la api es necesario al menos **Java 1.8**. Todos los componentes visuales de la api fueron creados y, por tanto, son compatibles con **Java Swing**.
 
 # Cambios de la última actualización:
   - **Nuevos componentes visuales**: `RelojAnalogico`, `NotificacionesModernas` y `CarruselImagenes`.
