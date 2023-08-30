@@ -10,8 +10,6 @@
 
 <p>Api personalizada con componentes visuales personalizados y utilidades.</p>
 
-<p>Para el correcto funcionamiento de la api es necesario al menos <b>Java 1.8</b>. Todos los componentes visuales de la api fueron creados y, por tanto, son compatibles con <b>Java Swing</b>.</p>
-
 <p>Existen dos versiones, una con todas las funcionalidades, y una versión lite
 sin el ManejadorLookAndFeels ni NotificacionesModernas. Si se usa la Lite, tener en cuenta que 
 algunos componentes visuales se ven mejor con un Look and Feel diferente
@@ -29,6 +27,9 @@ de la mayoría de sus componentes visuales. En futuras versiones se continuará 
 - **Enlace de descarga en Google Drive**: [descargar última versión.](#google-drive)
 > [!WARNING]
 > Existen secciones de utilidades de la api que no fueron probadas correctamente, por lo que pueden existir bugs.
+
+> [!IMPORTANT]
+> Para el correcto funcionamiento de la api es necesario al menos **Java 1.8**. Todos los componentes visuales de la api fueron creados y, por tanto, son compatibles con **Java Swing**.
 
 # Cambios de la última actualización:
   - **Nuevos componentes visuales**: `RelojAnalogico`, `NotificacionesModernas` y `CarruselImagenes`.
