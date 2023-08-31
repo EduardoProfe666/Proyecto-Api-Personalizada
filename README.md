@@ -86,23 +86,23 @@ Para acceder a ella seleccione la sección `Wiki` de este repositorio o siga [es
 # Errores Conocidos:
 > [!WARNING]
 > La api presenta los siguientes errores conocidos:
-> - [] #3
+> - [ ] #3
 
 # Funcionalidades futuras:
 Las próximas funcionalidades y metas a implementar en las futuras actualizaciones son:
 - [x] Sistema de notificaciones moderno en cascada.
 - [x] Un carrusel de imágenes.
 - [x] Un reloj analógico.
-- [] Arreglar errores conocidos :tada:
-- [] Calendario personalizable con animaciones (Mucho mejor visualmente que `JCalendar`).
-- [] Calendario con estilo parecido al de `Windows 10`.
-- [] Selector de hora con estilo parecido al de `Windows 10`.
-- [] Confetti!
-- [] `JDialogs` personalizados con fondo difuminado (Mucho mejor visualmente que los `JDialogs` convencionales).
-- [] `Title Bar` con estilo parecido al de `Windows 10`.
-- [] `Title Bar` personalizable semitransparente con bordes ovalados.
-- [] Crear repositorio en Gradle.
-- [] Crear repositorio en Maven.
+- [ ] Arreglar errores conocidos :tada:
+- [ ] Calendario personalizable con animaciones (Mucho mejor visualmente que `JCalendar`).
+- [ ] Calendario con estilo parecido al de `Windows 10`.
+- [ ] Selector de hora con estilo parecido al de `Windows 10`.
+- [ ] Confetti!
+- [ ] `JDialogs` personalizados con fondo difuminado (Mucho mejor visualmente que los `JDialogs` convencionales).
+- [ ] `Title Bar` con estilo parecido al de `Windows 10`.
+- [ ] `Title Bar` personalizable semitransparente con bordes ovalados.
+- [ ] Crear repositorio en Gradle.
+- [ ] Crear repositorio en Maven.
 
 # Enlaces:
 
