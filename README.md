@@ -94,6 +94,7 @@ Las próximas funcionalidades y metas a implementar en las futuras actualizacion
 - [x] Sistema de notificaciones moderno en cascada.
 - [x] Un carrusel de imágenes.
 - [x] Un reloj analógico.
+- [ ] Culminar versión primaria de la wiki.
 - [ ] Arreglar errores conocidos :tada:
 - [ ] Mejorar algoritmos de los métodos implementados.
 - [ ] Calendario personalizable con animaciones (Mucho mejor visualmente que `JCalendar`).
