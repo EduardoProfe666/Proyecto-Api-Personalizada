@@ -2,7 +2,7 @@ name: "💡 Pedir Funcionalidad"
 description: Crea un nuevo pedido de Funcionalidad
 title: "💡- <title>"
 labels: [
-  "question"
+  "enhancement"
 ]
 body:
   - type: input
