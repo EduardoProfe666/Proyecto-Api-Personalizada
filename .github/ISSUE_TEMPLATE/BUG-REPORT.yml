@@ -53,8 +53,7 @@ body:
     attributes:
       label: "Capturas de pantalla"
       description: Si es necesario, añade capturas de pantalla del problema 
-      value: |
-        ![DESCRIPTION](LINK.png)
+      placeholder: Añada imágenes de como en Markdown ---- ![Descripcion](linkImagen) 
       render: bash
     validations:
       required: false
