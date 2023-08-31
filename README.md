@@ -87,6 +87,7 @@ Para acceder a ella seleccione la sección `Wiki` de este repositorio o siga [es
 > [!WARNING]
 > La api presenta los siguientes errores conocidos:
 > - [ ] https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/issues/3
+> - [ ] https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/issues/4
 
 # Funcionalidades futuras:
 Las próximas funcionalidades y metas a implementar en las futuras actualizaciones son:
