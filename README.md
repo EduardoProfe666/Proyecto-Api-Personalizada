@@ -41,12 +41,6 @@ Para la correcta ejecución de todas las funcionalidades de la api es necesario 
 - `Java` 1.8 o más reciente. 
 - `Java Swing`.
 
-# Wiki de la Api:
-La api se encuentra documentada tanto con sus respectivos archivos `JavaDoc` como por una wiki 
-en Github. 
-
-Para acceder a ella seleccione la sección `Wiki` de este repositorio o siga [este enlace](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki).
-
 # Clases principales de la api:
 La api presenta las siguientes clases principales (Enlaces a la [Wiki](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki)):
 - [**Componentes Visuales**](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/ComponentesVisuales)
@@ -83,11 +77,32 @@ La api presenta las siguientes clases principales (Enlaces a la [Wiki](https://g
 - [**Modelos**](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/Modelos)
   - [`ModeloPrincipalTableModel`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/ModeloPrincipalTableModel)
 
+# Wiki de la Api:
+La api se encuentra documentada tanto con sus respectivos archivos `JavaDoc` como por una wiki 
+en Github. 
+
+Para acceder a ella seleccione la sección `Wiki` de este repositorio o siga [este enlace](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki).
+
 # Errores Conocidos:
 > [!WARNING]
 > La api presenta los siguientes errores conocidos:
-> - Error en la importación de las piscinas de datos (`txt`) en la clase de utilidades `GeneradorNombres`. Para conocer más 
-> acerca de este error y su posible solución siga [este enlace](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/GeneradorNombres) a la sección de la wiki que trata este tema.
+> - [] #3
+
+# Funcionalidades futuras:
+Las próximas funcionalidades y metas a implementar en las futuras actualizaciones son:
+- [x] Sistema de notificaciones moderno en cascada.
+- [x] Un carrusel de imágenes.
+- [x] Un reloj analógico.
+- [] Arreglar errores conocidos :tada:
+- [] Calendario personalizable con animaciones (Mucho mejor visualmente que `JCalendar`).
+- [] Calendario con estilo parecido al de `Windows 10`.
+- [] Selector de hora con estilo parecido al de `Windows 10`.
+- [] Confetti!
+- [] `JDialogs` personalizados con fondo difuminado (Mucho mejor visualmente que los `JDialogs` convencionales).
+- [] `Title Bar` con estilo parecido al de `Windows 10`.
+- [] `Title Bar` personalizable semitransparente con bordes ovalados.
+- [] Crear repositorio en Gradle.
+- [] Crear repositorio en Maven.
 
 # Enlaces:
 
