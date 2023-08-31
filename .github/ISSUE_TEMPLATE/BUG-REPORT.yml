@@ -58,7 +58,7 @@ body:
       render: bash
     validations:
       required: false
-      - type: textarea
+  - type: textarea
     id: extra
     attributes:
       label: "Información Extra"
