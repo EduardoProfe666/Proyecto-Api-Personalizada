@@ -28,6 +28,15 @@ body:
     validations:
       required: true
   - type: textarea
+    id: screenshot
+    attributes:
+      label: "Capturas de pantalla"
+      description: Si es necesario, añade capturas de pantalla 
+      placeholder: Añada imágenes de como en Markdown ---- ![Descripcion](linkImagen) 
+      render: bash
+    validations:
+      required: false
+  - type: textarea
     id: extra
     attributes:
       label: "Información extra"
