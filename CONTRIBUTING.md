@@ -5,7 +5,7 @@
 ¡Primero que nada, gracias por tomarte un tiempo y pensar en contribuir al proyecto!!! 😋
 
 El repositorio se encuentra con la `licencia MIT`, por lo que a grandes rasgos puedes usar el código como quieras, incluyendo sus modificaciones 
-y uso no comercial. Pero si aun así quieres contribuir, pues bienvenido seas. Puedes hacerlo de las siguientes maneras:
+y uso personal/comercial. Pero si aun así quieres contribuir, pues bienvenido seas. Puedes hacerlo de las siguientes maneras:
 
 - 🌌 `Modo Estándar`: Reporte de errores y Pedidos de funcionalidades en la sección de `Issues` del repositorio.
 - 😎 `Modo Pro`: Clonando el proyecto y creando una rama nueva donde se encuentren las nuevas funcionalidades.
