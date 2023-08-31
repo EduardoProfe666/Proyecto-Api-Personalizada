@@ -25,7 +25,7 @@ import java.util.List;
  */
 public final class Auxiliares {
 
-	private Auxiliares(){};
+	private Auxiliares(){}
 	/**
 	 * 
 	 * Método para extraer la fecha de nacimiento del carnet de identidad suministrado. Debe estar 

@@ -20,7 +20,7 @@ import javax.swing.ImageIcon;
  */
 
 public final class AuxiliaresVisuales {
-	private AuxiliaresVisuales(){};
+	private AuxiliaresVisuales(){}
 	/**
 	 *  Método que permitirá redimensionar la imagen pasada a unas dimensiones determinadas.
 	 * 

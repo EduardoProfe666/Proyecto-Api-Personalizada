@@ -17,7 +17,7 @@ import java.util.Random;
  * .<b>Dígitos 1-2</b>: Dígitos que representan los 2 últimos dígitos del año de nacimiento. Por ejemplo: <b>2002-:02</b><br>
  * .<b>Dígitos 3-4</b>: Dígitos que representan el mes de nacimiento, siendo <b>enero-:01</b> y <b>diciembre-:12</b><br>
  * .<b>Dígitos 5-6</b>: Dígitos que representan el día de nacimiento. Por ejemplo: <b>01</b> y <b>31</b><br>
- * .<b>Dígitos 7</b>: Dígito que representan el siglo de nacimiento, siendo <b>0-5 -: Siglo XX</b>, <b>6-8 -: Siglo XXI</b> y <b>9 -: Siglo XIX</b><br>
+ * .<b>Dígitos 7</b>: Dígito que representa el siglo de nacimiento, siendo <b>0-5 -: Siglo XX</b>, <b>6-8 -: Siglo XXI</b> y <b>9 -: Siglo XIX</b><br>
  * .<b>Dígitos 8-9</b>: Dígitos aleatorios<br>
  * .<b>Dígitos 10</b>: Dígito que representa el sexo, de forma tal que si es par es masculino e impar si es femenino<br>
  * .<b>Dígitos 11</b>: Dígito  aleatorio (En verdad este es un dígito de control, pero no se pudo recolectar el algoritmo empleado para su generación)<br>
