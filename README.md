@@ -3,7 +3,7 @@
 # Api Personalizada en Java
 [![Languages](https://img.shields.io/github/languages/top/EduardoProfe666/Proyecto-Api-Personalizada)](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://tlo.mit.edu/learn-about-intellectual-property/software-and-open-source-licensing/open-source-licensing) 
-![Static Badge](https://img.shields.io/badge/status-development-green) 
+![Static Badge](https://img.shields.io/badge/status-build-green) 
 [![Latest Version](https://img.shields.io/github/release/EduardoProfe666/Proyecto-Api-Personalizada.svg)](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/releases) 
 ![GitHub Release Date](https://img.shields.io/github/release-date/EduardoProfe666/Proyecto-Api-Personalizada)
 [![Last Commit](https://img.shields.io/github/last-commit/EduardoProfe666/Proyecto-Api-Personalizada)](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/commits/master)
@@ -95,6 +95,7 @@ Las próximas funcionalidades y metas a implementar en las futuras actualizacion
 - [x] Un carrusel de imágenes.
 - [x] Un reloj analógico.
 - [ ] Culminar versión primaria de la wiki.
+- [ ] Agregar un `CHANGELOG`
 - [ ] Arreglar errores conocidos :tada:
 - [ ] Mejorar algoritmos de los métodos implementados.
 - [ ] Calendario personalizable con animaciones (Mucho mejor visualmente que `JCalendar`).

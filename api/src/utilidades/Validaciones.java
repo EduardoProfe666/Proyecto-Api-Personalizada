@@ -9,9 +9,7 @@ import java.util.List;
 
 /**
  * 
- * Clase de utilidades que contiene algunas de las validaciones esenciales, incluyendo trabajo
- * con {@link String}, {@link List} y validaciones referentes al carnet de identidad. El acceso 
- * a sus métodos es de manera estática.
+ * 
  * 
  * <h1>Validaciones de {@link String} y double:</h1>
  * 1.--{@link #validarNumeroRango(double, double, double)}<br>
@@ -42,7 +40,7 @@ import java.util.List;
  */
 
 public final class Validaciones {
-	private Validaciones() {};
+	private Validaciones() {}
 
 	/**
 	 *  Método que permitirá validar si un valor se encuentra en un rango
