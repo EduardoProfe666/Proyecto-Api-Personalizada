@@ -107,7 +107,7 @@ Las próximas funcionalidades y metas a implementar en las futuras actualizacion
 - [ ] `Title Bar` personalizable semitransparente con bordes ovalados.
 - [ ] Crear repositorio en Gradle.
 - [ ] Crear repositorio en Maven.
-- [ ] Agregar `CONTRIBUTING`
+- [x] Agregar `CONTRIBUTING`
 - [x] Agregar `ISSUES_TEMPLATES` en `.yaml` personalizados.
 
 # Enlaces:
