@@ -1,6 +1,6 @@
 name: "🐛 Reporte de Errores"
 description: Crea un nuevo reporte de errores en alguna funcionalidad/clase.
-title: "🐛 <title>"
+title: "🐛- <title>"
 labels: [
   "bug"
 ]
