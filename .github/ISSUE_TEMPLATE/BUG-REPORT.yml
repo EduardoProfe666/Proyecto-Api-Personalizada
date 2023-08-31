@@ -53,7 +53,7 @@ body:
     attributes:
       label: "Capturas de pantalla"
       description: Si es necesario, añade capturas de pantalla del problema 
-      placeholder: Añada imágenes en el formato de Markdown ---- ![Descripcion](linkImagen) 
+      placeholder: Añada imágenes en el formato de Markdown -> ![Descripcion](linkImagen) 
       render: bash
     validations:
       required: false
