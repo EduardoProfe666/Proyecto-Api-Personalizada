@@ -1,13 +1,12 @@
-# Contributing to JLibGraph 😎
+<img src = assets/img/banner.png width="100%">
 
-First of all, thank you for taking the time to contribute!! 😁
+# 👾Contribuir a `Api Personalizada`👾
 
-JLibGraph is a free software library, licensed under the terms of the GNU-LGPL v2.1, and as such, you are free to grab your own copy of the source code and develop 
-your own super-duper graph theory library. However, if you are willing to contribute, we are open to it; but there are a few things you must have in account.
+¡Primero que nada, gracias por tomarte un tiempo y pensar en contribuir al proyecto!!! 😋
 
-## House rules
+El repositorio se encuentra con la `licencia MIT`, por lo que a grandes rasgos puedes usar el código como quieras, incluyendo sus modificaciones 
+y uso no comercial. Pero si aun así quieres contribuir, pues bienvenido seas. Puedes hacerlo de las siguientes maneras:
 
-* The project is strict Java, meaning that any substancial piece of code must be written in pure Java (no JNI dependences please). This ensures maximum portability
-  across different architectures.
-* One must conform to the code conventions stablished by us, the original contributors. The actual reason behind this, is that this is, at the time of writing, a university
-  project designed to replace a library already in use, but must contain code that conform with everything taught at our uni.
+- 🌌 `Modo Estándar`: Reporte de errores y Pedidos de funcionalidades en la sección de `Issues` del repositorio.
+- 😎 `Modo Pro`: Clonando el proyecto y creando una rama nueva donde se encuentren las nuevas funcionalidades.
+
