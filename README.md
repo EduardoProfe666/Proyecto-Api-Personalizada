@@ -94,6 +94,7 @@ Las próximas funcionalidades y metas a implementar en las futuras actualizacion
 - [x] Un carrusel de imágenes.
 - [x] Un reloj analógico.
 - [ ] Arreglar errores conocidos :tada:
+- [ ] Mejorar algoritmos de los métodos implementados.
 - [ ] Calendario personalizable con animaciones (Mucho mejor visualmente que `JCalendar`).
 - [ ] Calendario con estilo parecido al de `Windows 10`.
 - [ ] Selector de hora con estilo parecido al de `Windows 10`.
