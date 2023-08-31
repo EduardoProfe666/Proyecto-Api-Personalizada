@@ -1,6 +1,6 @@
-name: "🐛 Bug Report"
-description: Create a new ticket for a bug.
-title: "🐛 [BUG] - <title>"
+name: "🐛 Reporte de Errores"
+description: Crea un nuevo reporte de errores en alguna funcionalidad/clase.
+title: "🐛 <title>"
 labels: [
   "bug"
 ]
@@ -8,73 +8,60 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: "Description"
-      description: Please enter an explicit description of your issue
-      placeholder: Short and explicit description of your incident...
-    validations:
-      required: true
-  - type: input
-    id: reprod-url
-    attributes:
-      label: "Reproduction URL"
-      description: Please enter your GitHub URL to provide a reproduction of the issue
-      placeholder: ex. https://github.com/USERNAME/REPO-NAME
+      label: "Descripción del problema"
+      description: Por favor introduzca una descripción detallada del problema.
+      placeholder: Descripción clara y detallada del problema.
     validations:
       required: true
   - type: textarea
     id: reprod
     attributes:
-      label: "Reproduction steps"
-      description: Please enter an explicit description of your issue
+      label: "Pasos para la reproducción del problema"
+      description: Por favor entre los pasos detallados para reproducir el problema
       value: |
-        1. Go to '...'
-        2. Click on '....'
-        3. Scroll down to '....'
-        4. See error
+        1. Ir a '...'
+        2. Clic en '....'
+        3. Desplazar hasta '....'
+        4. Ver error
       render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Traceback"
+      description: Por favor copie el traceback del error, es decir, las excepciones que saltan en la consola
+      render: bash
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: "IDE utilizado"
+      description: Seleccione el IDE en que tuvo este error
+      multiple: false
+      options:
+        - Eclipse IDE
+        - NetBeans IDE
+        - IntelliJ IDEA
+        - VS Code
+        - Otro
     validations:
       required: true
   - type: textarea
     id: screenshot
     attributes:
-      label: "Screenshots"
-      description: If applicable, add screenshots to help explain your problem.
+      label: "Capturas de pantalla"
+      description: Si es necesario, añade capturas de pantalla del problema 
       value: |
         ![DESCRIPTION](LINK.png)
       render: bash
     validations:
       required: false
-  - type: textarea
-    id: logs
+      - type: textarea
+    id: extra
     attributes:
-      label: "Logs"
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: bash
-    validations:
-      required: false
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: "Browsers"
-      description: What browsers are you seeing the problem on ?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-        - Opera
-    validations:
-      required: false
-  - type: dropdown
-    id: os
-    attributes:
-      label: "OS"
-      description: What is the impacted environment ?
-      multiple: true
-      options:
-        - Windows
-        - Linux
-        - Mac
+      label: "Información Extra"
+      description: Si es necesario, añada cualquier otra información que considere necesaria
     validations:
       required: false
