@@ -91,9 +91,6 @@ Para acceder a ella seleccione la sección `Wiki` de este repositorio o siga [es
 
 # Funcionalidades futuras:
 Las próximas funcionalidades y metas a implementar en las futuras actualizaciones son:
-- [x] Sistema de notificaciones moderno en cascada.
-- [x] Un carrusel de imágenes.
-- [x] Un reloj analógico.
 - [ ] Culminar versión primaria de la wiki.
 - [x] Agregar un `CHANGELOG`
 - [ ] Arreglar errores conocidos :tada:
