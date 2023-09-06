@@ -91,21 +91,13 @@ Para acceder a ella seleccione la sección `Wiki` de este repositorio o siga [es
 
 # Funcionalidades futuras:
 Las próximas funcionalidades y metas a implementar en las futuras actualizaciones son:
-- [ ] Culminar versión primaria de la wiki.
-- [x] Agregar un `CHANGELOG`
-- [ ] Arreglar errores conocidos :tada:
-- [ ] Mejorar algoritmos de los métodos implementados.
-- [ ] Calendario personalizable con animaciones (Mucho mejor visualmente que `JCalendar`).
-- [ ] Calendario con estilo parecido al de `Windows 10`.
-- [ ] Selector de hora con estilo parecido al de `Windows 10`.
-- [ ] Confetti!
-- [ ] `JDialogs` personalizados con fondo difuminado (Mucho mejor visualmente que los `JDialogs` convencionales).
-- [ ] `Title Bar` con estilo parecido al de `Windows 10`.
-- [ ] `Title Bar` personalizable semitransparente con bordes ovalados.
-- [ ] Crear repositorio en Gradle.
-- [ ] Crear repositorio en Maven.
-- [x] Agregar `CONTRIBUTING`
-- [x] Agregar `ISSUES_TEMPLATES` en `.yaml` personalizados.
+- Calendario personalizable con animaciones (Mucho mejor visualmente que `JCalendar`).
+- Calendario con estilo parecido al de `Windows 10`.
+- Selector de hora con estilo parecido al de `Windows 10`.
+- Confetti!
+- `JDialogs` personalizados con fondo difuminado (Mucho mejor visualmente que los `JDialogs` convencionales).
+- `Title Bar` con estilo parecido al de `Windows 10`.
+- `Title Bar` personalizable semitransparente con bordes ovalados.
 
 # Enlaces:
 
