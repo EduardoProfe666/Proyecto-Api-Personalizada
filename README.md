@@ -95,7 +95,7 @@ Las próximas funcionalidades y metas a implementar en las futuras actualizacion
 - [x] Un carrusel de imágenes.
 - [x] Un reloj analógico.
 - [ ] Culminar versión primaria de la wiki.
-- [ ] Agregar un `CHANGELOG`
+- [x] Agregar un `CHANGELOG`
 - [ ] Arreglar errores conocidos :tada:
 - [ ] Mejorar algoritmos de los métodos implementados.
 - [ ] Calendario personalizable con animaciones (Mucho mejor visualmente que `JCalendar`).

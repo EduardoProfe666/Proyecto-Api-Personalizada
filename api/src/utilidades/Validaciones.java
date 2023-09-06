@@ -56,7 +56,7 @@ public final class Validaciones {
 	 */
 	public static boolean validarNumeroRango(double valor, double minV, double maxV) {
 		boolean esValido = minV<=maxV;
-
+		
 		if(esValido)
 			esValido = valor>=minV && valor<=maxV;
 
@@ -64,7 +64,7 @@ public final class Validaciones {
 	}
 	/**
 	 * 
-	 *Método que permitirá validar si un {@link String} tiene un tamaño en un rango dado.
+	 * Método que permitirá validar si un {@link String} tiene un tamaño en un rango dado.
 	 * 
 	 * @param s {@link String} a validar
 	 * @param min Rango menor
@@ -242,7 +242,7 @@ public final class Validaciones {
 	 * @param fechaMin {@link Date} correspondiente a la fecha mínima de nacimiento que puede presentar el carnet de identidad
 	 * @param fechaMax {@link Date} correspondiente a la fecha máxima de nacimiento que puede presentar el carnet de identidad
 	 * @return <b>true</b>, si el {@link String} ci es válido en el rango de fechas; <b>false</b>
-	 * si pasa lo contrario, o <b>ci</b>==<b>null</b>, o <b>fechaMin</b>==null, o <b>fechaMax</b>==null
+	 * si pasa lo contrario, o <b>ci</b>==<b>null</b>.
 	 * 
 	 *  @author EduardoProfe
 	 */
@@ -271,7 +271,7 @@ public final class Validaciones {
 	}
 	/**
 	 * Método que permitirá validar la no repetición de los elementos de la lista. En esta implementación
-	 * los elementos de la lista pasada deben implementar la interfaz {@link Comparable}, pues es el algoritmo
+	 * los elementos de la lista pasada deben implementar la interfaz {@link Comparable}, pues el algoritmo
 	 * emplea el orden natural de los mismos.
 	 * 
 	 * @param lista {@link List} de elementos que implementan la interfaz {@link Comparable} a validar

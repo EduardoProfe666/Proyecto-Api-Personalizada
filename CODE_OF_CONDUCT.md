@@ -1,3 +1,5 @@
+<img src = assets/img/banner.png width="100%">
+
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
