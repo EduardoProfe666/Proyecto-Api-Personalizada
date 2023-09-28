@@ -41,42 +41,6 @@ Para la correcta ejecución de todas las funcionalidades de la api es necesario 
 - `Java` 1.8 o más reciente. 
 - `Java Swing`.
 
-# Clases principales de la api:
-La api presenta las siguientes clases principales (Enlaces a la [Wiki](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki)):
-- [**Componentes Visuales**](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/ComponentesVisuales)
-  - [`AvatarCircular`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/AvatarCircular)
-  - [`BotonAnimacion`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/BotonAnimacion)
-  - [`CampoCIValidado`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/CampoCIValidado)
-  - [`CarruselImagenes`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/CarruselImagenes)
-  - [`Imagen`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/Imagen)
-  - [`ImagenAnimada`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/ImagenAnimada)
-  - [`JLabelAnimacion`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/JLabelAnimacion)
-  - [`JLabelHora`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/JLabelHora)
-  - [`JLabelMultilineaMultialineado`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/JLabelMultilineaMultialineado)
-  - [`JTextFieldModificado`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/JTextFieldModificado)
-  - [`Linea`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/Linea)
-  - [`Notificaciones`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/Notificaciones)
-  - [`NotificacionesModernas`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/NotificacionesModernas)
-  - [`PanelAnimacionCurvas`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/PanelAnimacionCurvas)
-  - [`PanelBordeOval`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/PanelBordeOval)
-  - [`PanelGradiente`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/PanelGradiente)
-  - [`PanelGradienteH`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/PanelGradienteH)
-  - [`PanelGradienteV`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/PanelGradienteV)
-  - [`RelojAnalogico`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/RelojAnalogico)
-- [**Utilidades**](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/Utilidades)
-  - [`Auxiliares`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/Auxiliares)
-  - [`AuxiliaresVisuales`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/AuxiliaresVisuales)
-  - [`GeneradorCICubano`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/GeneradorCICubano)
-  - [`GeneradorContraseñas`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/GeneradorContrasenas)
-  - [`GeneradorNombres`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/GeneradorNombres)
-  - [`ManejadorLookAndFeels`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/ManejadorLookAndFeels)
-  - [`Validaciones`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/Validaciones)
-- [**Algoritmos**](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/Algoritmos)
-  - [`Busqueda`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/Busqueda)
-  - [`Ordenamiento`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/Ordenamiento)
-- [**Modelos**](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/Modelos)
-  - [`ModeloPrincipalTableModel`](https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/wiki/ModeloPrincipalTableModel)
-
 # Wiki de la Api:
 La api se encuentra documentada tanto con sus respectivos archivos `JavaDoc` como por una wiki 
 en Github. 
