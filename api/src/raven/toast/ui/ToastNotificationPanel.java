@@ -55,7 +55,7 @@ public class ToastNotificationPanel extends JPanel {
 
     private void installDefault() {
         labelIcon = new JLabel();
-        textArea = new JTextArea("Hello my name\nRaven");
+        textArea = new JTextArea("Hello my name\nEduardoProfe");
         textArea.setOpaque(false);
         textArea.setWrapStyleWord(true);
         textArea.setFocusable(false);

@@ -8,7 +8,7 @@ import java.net.URL;
 import javax.swing.JLabel;
 import javax.swing.Timer;
 
-import utilidades.AuxiliaresVisuales;
+import logica.utilidades.interfaz.AuxiliaresVisuales;
 
 /**
  * Clase que permite modelar un imagen con una animación de movimiento simple en dirección vertical y horizontal con suavizado.

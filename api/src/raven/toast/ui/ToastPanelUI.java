@@ -1,6 +1,7 @@
 package raven.toast.ui;
 
 import static com.formdev.flatlaf.FlatClientProperties.*;
+import static raven.toast.ToastClientProperties.*;
 
 import com.formdev.flatlaf.FlatClientProperties;
 import com.formdev.flatlaf.ui.FlatStylingSupport;
@@ -9,8 +10,6 @@ import com.formdev.flatlaf.ui.FlatStylingSupport.Styleable;
 import com.formdev.flatlaf.ui.FlatUIUtils;
 import com.formdev.flatlaf.util.LoggingFacade;
 import com.formdev.flatlaf.util.UIScale;
-
-import static raven.toast.ToastClientProperties.*;
 
 import raven.toast.util.UIUtils;
 

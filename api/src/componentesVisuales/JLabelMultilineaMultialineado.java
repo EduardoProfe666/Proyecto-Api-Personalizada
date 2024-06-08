@@ -3,6 +3,7 @@ package componentesVisuales;
 import java.util.HashMap;
 
 import javax.swing.JLabel;
+import javax.swing.SwingConstants;
 
 /**
  * Clase que permite modelar un JLabel con capacidad de mostrar texto con múltiples líneas y permite variar la alineación del mismo, 
@@ -84,6 +85,22 @@ public class JLabelMultilineaMultialineado extends JLabel{
 			this.alineacion=Alineacion.IZQUIERDA;
 		}
 		else{
+			switch (alineacion) {
+			case IZQUIERDA:
+				setHorizontalAlignment(SwingConstants.LEADING);
+				break;
+			case DERECHA:
+				setHorizontalAlignment(SwingConstants.TRAILING);
+				break;
+			case CENTRADA:
+				setHorizontalAlignment(SwingConstants.CENTER);
+				break;
+			case JUSTIFICADA:
+				setHorizontalAlignment(SwingConstants.LEADING);
+				break;
+			default:
+				break;
+			}
 			this.alineacion=alineacion;
 			this.setText(texto);
 		}

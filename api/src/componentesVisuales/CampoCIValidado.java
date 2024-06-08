@@ -8,8 +8,8 @@ import javax.swing.event.CaretEvent;
 import javax.swing.event.CaretListener;
 import javax.swing.text.MaskFormatter;
 
-import utilidades.Auxiliares;
-import utilidades.Validaciones;
+import logica.utilidades.logica.Auxiliares;
+import logica.utilidades.logica.Validaciones;
 /**
  * {@link JFormattedTextField} modificado para poder validar 
  * la introducción del carnet de identidad. Para su uso 

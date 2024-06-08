@@ -23,7 +23,7 @@ import javax.swing.JComponent;
  * <h1>Ver:</h1>{@link #avatar}<br>{@link #tamBorde}<br><br>
  * @version 28/10/2022
  * @author DJ-Raven
- * @author Eduardo
+ * @author EduardoProfe
  *
  */
 

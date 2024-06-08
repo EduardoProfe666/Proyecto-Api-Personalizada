@@ -4,6 +4,7 @@ import com.formdev.flatlaf.FlatPropertiesLaf;
 import com.formdev.flatlaf.ui.FlatStylingSupport.Styleable;
 import com.formdev.flatlaf.ui.FlatUIUtils;
 import com.formdev.flatlaf.util.UIScale;
+
 import raven.toast.util.ShadowRenderer;
 
 import javax.swing.*;

@@ -20,12 +20,12 @@ import org.jdesktop.animation.timing.TimingTargetAdapter;
 
 /**
  *  
- * Clase que modela un botón con animación al ser presionado. 
+ * Clase que modela un botï¿½n con animaciï¿½n al ser presionado. 
  * 
  * <h1>Ver:</h1>{@link #colorEfecto}<br><br>
  * @version 28/10/2022
  * @author DJ-Raven
- * @author Eduardo
+ * @author EduardoProfe
  */
 
 public class BotonAnimacion extends JButton {
@@ -54,7 +54,7 @@ public class BotonAnimacion extends JButton {
     private Point puntoPresionado;
     private float alpha;
     /**
-     * {@link Color} que determinará el color de la animación.
+     * {@link Color} que determinarï¿½ el color de la animaciï¿½n.
      * 
      * @author EduardoProfe
      */

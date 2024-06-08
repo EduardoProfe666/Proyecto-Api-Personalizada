@@ -8,6 +8,14 @@ import java.awt.Rectangle;
 import java.awt.RenderingHints;
 import javax.swing.JComponent;
 
+/**
+ * Clase que modela una línea configurable con diferentes aspectos como
+ * el color, la orientación, el grosor y tipo de línea.
+ * <h1>Ver:</h1>{@link #color}<br>{@link #grosor}<br>{@link #orientacion}<br>{@link #tipoLinea}<br><br> 
+ * @version 08/06/2024
+ * @author EduardoProfe
+ *
+ */
 public class Linea extends JComponent {
     private static final long serialVersionUID = 1L;
     public static final int ORIENTACION_VERTICAL = 0;
@@ -16,15 +24,62 @@ public class Linea extends JComponent {
     public static final int ORIENTACION_DIAGONAL_IZQUIERDA = 3;
     public static final int LINEA_CONTINUA = 0;
     public static final int LINEA_DISCONTINUA = 1;
+    /**
+     * {@link Color} que permite modificar el color de la línea
+     * @author EduardoProfe
+     */
     private Color color;
+    
+    /**
+     * {@link Integer} que permite modificar el grosor de la línea
+     * @author EduardoProfe
+     */
     private int grosor;
+    /**
+     * {@link Integer} que permite modificar la orientación de la línea
+     * <br>
+     * Las posibles orientaciones son:
+     * <br>
+     * - {@link #ORIENTACION_DIAGONAL_DERECHA}
+     * <br>
+     * - {@link #ORIENTACION_DIAGONAL_IZQUIERDA}
+     * <br>
+     * - {@link #ORIENTACION_HORIZONTAL}
+     * <br>
+     * - {@link #ORIENTACION_VERTICAL}
+     * 
+     * @author EduardoProfe
+     */
     private int orientacion;
+    
+    /**
+     * {@link Integer} que permite modificar el tipo de la línea
+     * <br>
+     * Los posibles tipos de líneas son:
+     * <br>
+     * - {@link #LINEA_CONTINUA}
+     * <br>
+     * - {@link #LINEA_DISCONTINUA}
+     * @author EduardoProfe
+     */
     private int tipoLinea;
 
+    /**
+     * Se crea una línea de color negra y grosor 3.
+     * @param orientacion {@link #orientacion}
+     * @param tipoLinea {@link #tipoLinea}
+     */
     public Linea(int orientacion, int tipoLinea) {
         this(Color.BLACK, 3, orientacion, tipoLinea);
     }
-
+    
+    /**
+     * 
+     * @param color {@link #color}
+     * @param grosor {@link #grosor}
+     * @param orientacion {@link #orientacion}
+     * @param tipoLinea {@link #tipoLinea}
+     */
     public Linea(Color color, int grosor, int orientacion, int tipoLinea) {
         this.setBounds(0, 0, 50, 50);
         this.color = color;

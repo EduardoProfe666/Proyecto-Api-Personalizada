@@ -1,0 +1,9 @@
+package pruebas.visual;
+
+public enum LookAndFeels {
+	Predeterminado, Nimbus, FlatLaf_Light, FlatLaf_Dark,FlatLaf_Darcula,
+	FlatLaf_Arc,FlatLaf_Arc_Orange,FlatLaf_Arc_Dark,FlatLaf_Arc_Dark_Orange,FlatLaf_Carbon,FlatLaf_Cobalt2,FlatLaf_Cyan_Light,FlatLaf_Dark_Flat,
+	FlatLaf_Dark_Purple,FlatLaf_Dracula,FlatLaf_Gradianto_Dark_Fuchsia,FlatLaf_Gradianto_Deep_Ocean,FlatLaf_Gradianto_Midnight_Blue,FlatLaf_Gradianto_Nature_Green,FlatLaf_Gray,FlatLaf_Gruvbox_Dark_Hard,
+	FlatLaf_Gruvbox_Dark_Medium,FlatLaf_GruvBox_Dark_Soft,FlatLaf_Hiberbee_Dark,FlatLaf_Hight_Contrast,FlatLaf_Light_Flat,FlatLaf_Material_Design_Dark,FlatLaf_Monocai,FlatLaf_Monokai_Pro,
+	FlatLaf_Nord,FlatLaf_One_Dark,FlatLaf_Solarized_Dark,FlatLaf_Solarized_Light,FlatLaf_Spacegray,FlatLaf_Vuesion,FlatLaf_Xcode_Dark;
+}
