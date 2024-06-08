@@ -269,6 +269,7 @@ public class PruebaVisual extends JFrame {
 	private JLabel label_3;
 	private JTextField glassText;
 	private JButton btnLanzar;
+	private SpinnerProgress spinnerProgress;
 
 	/**
 	 * Create the frame.
@@ -288,29 +289,10 @@ public class PruebaVisual extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		
-		drawer = Drawer.newDrawer(this)
-				.background(new Color(90, 90, 90))
-		        .enableScroll(true)
-		        .header(new JLabel("  Header"))
-		        .space(3)
-
-		        .addChild(new DrawerItem("Option 1").icon(AuxiliaresVisuales.ajustarImagen(new Dimension(16,16), getClass().getResource("/imagenes_prueba/favicon.png"))).build())
-		        .addChild(new DrawerItem("Option 2").icon(AuxiliaresVisuales.ajustarImagen(new Dimension(16,16), getClass().getResource("/imagenes_prueba/favicon.png"))).build())
-
-		        .addFooter(new DrawerItem("Footer").icon(AuxiliaresVisuales.ajustarImagen(new Dimension(16,16), getClass().getResource("/imagenes_prueba/favicon.png"))).build())
-
-		        .event(new EventDrawer() {
-		            @Override
-		            public void selected(int index, DrawerItem item) {
-		                if (drawer.isShow()) {
-		                    drawer.hide();
-		                }
-		                else
-		                	drawer.hide();
-		            }
-		        })
-		        .drawerBackground(new Color(30,30,30,120))
-				.build();
+		drawer = Drawer.newDrawer(this).build();
+		
+		spinnerProgress = new SpinnerProgress();
+		
 		
 		hora1 = new JLabelHora(0);
 		hora2 = new JLabelHora(1);
@@ -367,6 +349,10 @@ public class PruebaVisual extends JFrame {
 					imagenFBR.stop();
 				else
 					imagenFBR.start();
+				if(tabbedPane.getSelectedIndex() != 18)
+					spinnerProgress.setEnabled(false);
+				else
+					spinnerProgress.setEnabled(true);
 			}
 		});
 		tabbedPane.setFont(new Font("Dialog", Font.BOLD, 16));
@@ -1726,7 +1712,7 @@ public class PruebaVisual extends JFrame {
 		lblPruebaDeComponente_14.setBounds(137, 5, 489, 23);
 		panelSpinnerProgress.add(lblPruebaDeComponente_14);
 		
-		SpinnerProgress spinnerProgress = new SpinnerProgress();
+		
 		spinnerProgress.setIndeterminate(true);
 		spinnerProgress.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		spinnerProgress.setBounds(333, 203, 97, 92);
@@ -1899,7 +1885,7 @@ public class PruebaVisual extends JFrame {
 		panelCalTP.add(lblPruebaDeComponente_19_2);
 		
 		TimePicker timePicker = new TimePicker();
-		timePicker.setBounds(263, 106, 236, 286);
+		timePicker.setBounds(243, 85, 276, 328);
 		panelCalTP.add(timePicker);
 		
 		JPanel panelDP = new JPanel();
@@ -2126,6 +2112,30 @@ public class PruebaVisual extends JFrame {
 		contentPane.setLayout(gl_contentPane);
 		
 		this.pack();
+		
+		drawer = Drawer.newDrawer(this)
+				.background(new Color(90, 90, 90))
+		        .enableScroll(true)
+		        .header(new JLabel("  Header"))
+		        .space(3)
+
+		        .addChild(new DrawerItem("Option 1").icon(AuxiliaresVisuales.ajustarImagen(new Dimension(16,16), getClass().getResource("/imagenes_prueba/favicon.png"))).build())
+		        .addChild(new DrawerItem("Option 2").icon(AuxiliaresVisuales.ajustarImagen(new Dimension(16,16), getClass().getResource("/imagenes_prueba/favicon.png"))).build())
+
+		        .addFooter(new DrawerItem("Footer").icon(AuxiliaresVisuales.ajustarImagen(new Dimension(16,16), getClass().getResource("/imagenes_prueba/favicon.png"))).build())
+
+		        .event(new EventDrawer() {
+		            @Override
+		            public void selected(int index, DrawerItem item) {
+		                if (drawer.isShow()) {
+		                    drawer.hide();
+		                }
+		                else
+		                	drawer.hide();
+		            }
+		        })
+		        .drawerBackground(new Color(30,30,30,150))
+				.build();
 	}
 	private Color convertirColor(Colores c){
 		switch(c){
