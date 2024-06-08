@@ -54,6 +54,7 @@ Para la correcta ejecución de todas las funcionalidades de la api es necesario 
 - `Java Swing`.
 
 # Sitio web de documentación de la api:
+
 La api presenta un sitio web desarrollado en VuePress con la documentación de la misma (aún en fase de desarrollo). La misma se encuentra en el [siguiente enlace](https://eduardoprofe666.github.io/api-personalizada-wiki-vuepress/).
 
 # Wiki de la Api:
@@ -91,5 +92,4 @@ Las próximas funcionalidades y metas a implementar en las futuras actualizacion
 
 ## Google Drive:
 
-- **[Versión Estándar](https://drive.google.com/file/d/194eeuu4QhYpQj8gkoJ0_NuF5BbtkVAVs/view?usp=sharing)**
-- **[Versión Lite](https://drive.google.com/file/d/1X2FFDOlaKBD1-La_shhLjDKlPHXlY9lr/view?usp=sharing)**
+- **[Versión Estándar](https://drive.google.com/file/d/176cxLM6BuagyLXFVW3kDPdDEmtLq-nRg/view?usp=drive_link)**
