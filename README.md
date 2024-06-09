@@ -71,6 +71,7 @@ Para acceder a ella seleccione la sección `Wiki` de este repositorio o siga [es
 >
 > - [x] https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/issues/3
 > - [x] https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/issues/4
+> - [ ] https://github.com/EduardoProfe666/Proyecto-Api-Personalizada/issues/5
 
 # Funcionalidades futuras:
 
