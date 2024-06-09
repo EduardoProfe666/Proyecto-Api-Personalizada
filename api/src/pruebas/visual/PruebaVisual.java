@@ -27,6 +27,7 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
+import javax.swing.JFormattedTextField;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -73,10 +74,6 @@ import componentesVisuales.RelojAnalogico;
 import javaswingdev.chart.ModelPieChart;
 import javaswingdev.chart.PieChart;
 import javaswingdev.chart.PieChart.PeiChartType;
-import javaswingdev.drawer.Drawer;
-import javaswingdev.drawer.DrawerController;
-import javaswingdev.drawer.DrawerItem;
-import javaswingdev.drawer.EventDrawer;
 import javaswingdev.gauge.GaugeChart;
 import logica.algoritmos.Busqueda;
 import logica.algoritmos.Ordenamiento;
@@ -92,20 +89,20 @@ import pagination.EventPagination;
 import pagination.Pagination;
 import pagination.PaginationItemRender;
 import pruebas.modelotabla.PruebaModeloTabla;
+import raven.calendar.Calendar;
 import raven.chart.bar.HorizontalBarChart;
 import raven.chart.bar.LabelBar;
 import raven.chart.bar.LabelBar.LabelType;
 import raven.chart.line.LineChart;
+import raven.datetime.component.date.DatePicker;
+import raven.datetime.component.date.DatePicker.DateSelectionMode;
+import raven.datetime.component.time.TimePicker;
 import raven.popup.GlassPanePopup;
 import raven.popup.component.PopupCallbackAction;
 import raven.popup.component.PopupController;
 import raven.popup.component.SimplePopupBorder;
 import raven.popup.component.SimplePopupBorderOption;
 import raven.swing.spinner.SpinnerProgress;
-import raven.calendar.Calendar;
-import raven.datetime.component.time.TimePicker;
-import raven.datetime.component.date.DatePicker;
-import raven.datetime.component.date.DatePicker.DateSelectionMode;
 
 /**
  * 
@@ -248,8 +245,8 @@ public class PruebaVisual extends JFrame {
 	private JLabel lblPruebaDeComponente_7;
 	private JPanel panelFancy;
 	private JLabel lblPruebaDeComponente_12;
-	private JPanel panelDrawer;
-	private JLabel lblPruebaDeComponente_13;
+//	private JPanel panelDrawer;
+//	private JLabel lblPruebaDeComponente_13;
 	private JPanel panelSpinnerProgress;
 	private JLabel lblPruebaDeComponente_14;
 	private JPanel panelGauge;
@@ -264,12 +261,13 @@ public class PruebaVisual extends JFrame {
 	private JLabel lblPruebaDeComponente_19;
 	private JLabel pageNumber;
 	private ImagenFBR imagenFBR;
-	private JButton btnNewButton;
-	private DrawerController drawer;
+//	private JButton btnNewButton;
+//	private DrawerController drawer;
 	private JLabel label_3;
 	private JTextField glassText;
 	private JButton btnLanzar;
 	private SpinnerProgress spinnerProgress;
+//	private JFrame frame = this;
 
 	/**
 	 * Create the frame.
@@ -289,7 +287,7 @@ public class PruebaVisual extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		
-		drawer = Drawer.newDrawer(this).build();
+//		drawer = Drawer.newDrawer(this).build();
 		
 		spinnerProgress = new SpinnerProgress();
 		
@@ -1682,25 +1680,25 @@ public class PruebaVisual extends JFrame {
 		
 		panelFancy.add(imagenFBR);
 		
-		panelDrawer = new JPanel();
-		panelDrawer.setLayout(null);
-		tabbedPane.addTab("Drawer", null, panelDrawer, null);
+//		panelDrawer = new JPanel();
+//		panelDrawer.setLayout(null);
+//		tabbedPane.addTab("Drawer", null, panelDrawer, null);
 		
-		lblPruebaDeComponente_13 = new JLabel("Prueba de Componente Visual: Drawer");
-		lblPruebaDeComponente_13.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPruebaDeComponente_13.setFont(new Font("Tahoma", Font.PLAIN, 19));
-		lblPruebaDeComponente_13.setBounds(137, 5, 489, 23);
-		panelDrawer.add(lblPruebaDeComponente_13);
-		btnNewButton = new JButton("Lanzar Drawer");
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				drawer.show();
-				
-			}
-		});
-		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		btnNewButton.setBounds(209, 218, 344, 52);
-		panelDrawer.add(btnNewButton);
+//		lblPruebaDeComponente_13 = new JLabel("Prueba de Componente Visual: Drawer");
+//		lblPruebaDeComponente_13.setHorizontalAlignment(SwingConstants.CENTER);
+//		lblPruebaDeComponente_13.setFont(new Font("Tahoma", Font.PLAIN, 19));
+//		lblPruebaDeComponente_13.setBounds(137, 5, 489, 23);
+//		panelDrawer.add(lblPruebaDeComponente_13);
+//		btnNewButton = new JButton("Lanzar Drawer");
+//		btnNewButton.addActionListener(new ActionListener() {
+//			public void actionPerformed(ActionEvent e) {
+//				drawer.show();
+//				
+//			}
+//		});
+//		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 15));
+//		btnNewButton.setBounds(209, 218, 344, 52);
+//		panelDrawer.add(btnNewButton);
 		
 		panelSpinnerProgress = new JPanel();
 		panelSpinnerProgress.setLayout(null);
@@ -1885,8 +1883,12 @@ public class PruebaVisual extends JFrame {
 		panelCalTP.add(lblPruebaDeComponente_19_2);
 		
 		TimePicker timePicker = new TimePicker();
-		timePicker.setBounds(243, 85, 276, 328);
+		timePicker.setBounds(441, 96, 276, 328);
 		panelCalTP.add(timePicker);
+		
+		JFormattedTextField editor = new JFormattedTextField();
+		editor.setBounds(80, 234, 293, 34);
+		panelCalTP.add(editor);
 		
 		JPanel panelDP = new JPanel();
 		panelDP.setLayout(null);
@@ -1899,12 +1901,12 @@ public class PruebaVisual extends JFrame {
 		panelDP.add(lblPruebaDeComponente_19_1);
 		
 		DatePicker datePicker = new DatePicker();
-		datePicker.setBounds(10, 110, 352, 325);
+		datePicker.setBounds(10, 138, 352, 325);
 		panelDP.add(datePicker);
 		
 		DatePicker datePicker_1 = new DatePicker();
 		datePicker_1.setDateSelectionMode(DateSelectionMode.BETWEEN_DATE_SELECTED);
-		datePicker_1.setBounds(392, 110, 352, 325);
+		datePicker_1.setBounds(401, 138, 352, 325);
 		panelDP.add(datePicker_1);
 		
 		panelModelos = new JPanel();
@@ -2113,29 +2115,29 @@ public class PruebaVisual extends JFrame {
 		
 		this.pack();
 		
-		drawer = Drawer.newDrawer(this)
-				.background(new Color(90, 90, 90))
-		        .enableScroll(true)
-		        .header(new JLabel("  Header"))
-		        .space(3)
-
-		        .addChild(new DrawerItem("Option 1").icon(AuxiliaresVisuales.ajustarImagen(new Dimension(16,16), getClass().getResource("/imagenes_prueba/favicon.png"))).build())
-		        .addChild(new DrawerItem("Option 2").icon(AuxiliaresVisuales.ajustarImagen(new Dimension(16,16), getClass().getResource("/imagenes_prueba/favicon.png"))).build())
-
-		        .addFooter(new DrawerItem("Footer").icon(AuxiliaresVisuales.ajustarImagen(new Dimension(16,16), getClass().getResource("/imagenes_prueba/favicon.png"))).build())
-
-		        .event(new EventDrawer() {
-		            @Override
-		            public void selected(int index, DrawerItem item) {
-		                if (drawer.isShow()) {
-		                    drawer.hide();
-		                }
-		                else
-		                	drawer.hide();
-		            }
-		        })
-		        .drawerBackground(new Color(30,30,30,150))
-				.build();
+//		drawer = Drawer.newDrawer(this)
+//				.background(new Color(90, 90, 90))
+//		        .enableScroll(true)
+//		        .header(new JLabel("  Header"))
+//		        .space(3)
+//
+//		        .addChild(new DrawerItem("Option 1").icon(AuxiliaresVisuales.ajustarImagen(new Dimension(16,16), getClass().getResource("/imagenes_prueba/favicon.png"))).build())
+//		        .addChild(new DrawerItem("Option 2").icon(AuxiliaresVisuales.ajustarImagen(new Dimension(16,16), getClass().getResource("/imagenes_prueba/favicon.png"))).build())
+//
+//		        .addFooter(new DrawerItem("Footer").icon(AuxiliaresVisuales.ajustarImagen(new Dimension(16,16), getClass().getResource("/imagenes_prueba/favicon.png"))).build())
+//
+//		        .event(new EventDrawer() {
+//		            @Override
+//		            public void selected(int index, DrawerItem item) {
+//		                if (drawer.isShow()) {
+//		                    drawer.hide();
+//		                }
+//		                else
+//		                	drawer.hide();
+//		            }
+//		        })
+//		        .drawerBackground(new Color(30,30,30,150))
+//				.build();
 	}
 	private Color convertirColor(Colores c){
 		switch(c){

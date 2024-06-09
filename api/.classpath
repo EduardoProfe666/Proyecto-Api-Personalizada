@@ -8,9 +8,7 @@
 	<classpathentry kind="lib" path="lib/flatlaf-swingx-3.4.1.jar"/>
 	<classpathentry kind="lib" path="lib/flatlaf-extras-3.4.1.jar"/>
 	<classpathentry kind="lib" path="lib/jsvg-1.4.0.jar"/>
-	<classpathentry kind="lib" path="lib/pagination.jar"/>
 	<classpathentry kind="lib" path="lib/fancy-border-radius.jar"/>
-	<classpathentry kind="lib" path="lib/java-swing-drawer.jar"/>
 	<classpathentry kind="lib" path="lib/spinner-progress-1.0.0.jar"/>
 	<classpathentry kind="lib" path="lib/gauge-chart.jar"/>
 	<classpathentry kind="lib" path="lib/pie-chart.jar"/>
